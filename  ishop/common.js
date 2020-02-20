@@ -35,9 +35,7 @@ let mobiles = [
         price: 300,
         src: './image/sms_s9.jpg'
     }
-]
-
-
+];
 
 ﻿let MobileShop = React.createClass({
 
@@ -55,16 +53,14 @@ let mobiles = [
     },
 
     render: function () {
-
-        let mobilesShop = [];
-        this.props.mobiles.forEach((item, index) => mobilesShop.push(
+        let mobilesShop = this.props.mobiles.map((item, index) =>
             React.DOM.div({key: item.id, className: 'mobile'},
                 React.DOM.span({className: 'name'}, 'Name: ', item.name),
                 React.DOM.span({className: 'model'}, 'Model: ', item.model),
                 React.DOM.span({className: 'price'}, 'Price: ', item.price),
                 React.DOM.img({className: 'image', src: item.src, alt: 'mobile'}),
             )
-        ));
+        );
         return React.DOM.div({className: 'shop_wrapper'},
             React.DOM.div({className: 'shop_title'}, this.props.title),
             React.DOM.div({className: 'mobiles_wrapper'}, mobilesShop),
