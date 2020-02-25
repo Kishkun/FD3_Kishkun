@@ -27,7 +27,7 @@ body {
     background-color: #ffffff;
     /*400 700 900*/
 }
-.shop_wrapper{
+.shop_wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 60px;
@@ -37,36 +37,38 @@ body {
     justify-content: center;
     text-align: center;
 }
-.shop_wrapper .shop_title{
+.shop_wrapper .shop_title {
     text-align: center;
     font-size: 3vw;
     font-weight: 700;
     margin-bottom: 40px;
 }
-.mobiles_wrapper .mobile{
-    margin: 0 10px;
-    flex: 0 0 calc(100%/5);
+.mobiles_wrapper .mobile {
+    padding: 20px;
+    flex: 0 0 calc(100% / 5);
+    cursor: pointer;
+}
+.mobiles_wrapper .mobile-bg {
+    background: linear-gradient(122.04deg,#14e9b6 23.38%,#076deb 82.75%);
 }
 .mobiles_wrapper span {
     font-size: 1vw;
     display: block;
     margin-bottom: 10px;
 }
-.mobiles_wrapper .name{
-
+.mobiles_wrapper .name {
 }
-.mobiles_wrapper .model{
-
+.mobiles_wrapper .model {
 }
-.mobiles_wrapper .price{
+.mobiles_wrapper .price {
     color: red;
 }
-.mobiles_wrapper .image{
+.mobiles_wrapper .image {
     margin-top: 30px;
     max-width: 205px;
     max-height: 175px;
 }
-.mobiles_wrapper .delete_btn{
+.mobiles_wrapper .delete_btn {
     display: block;
     margin: 20px auto 0;
     padding: 5px 10px;
@@ -80,7 +82,7 @@ body {
     position: relative;
     cursor: pointer;
 }
-.mobiles_wrapper .delete_btn .btn_title{
+.mobiles_wrapper .delete_btn .btn_title {
     z-index: 1;
     position: relative;
     margin-bottom: 0;
@@ -95,13 +97,13 @@ body {
     height: 100%;
     transition: all .6s;
 }
-.mobiles_wrapper .delete_btn:hover:before{
+.mobiles_wrapper .delete_btn:hover:before {
     right: 0;
 }
-.mobiles_wrapper .delete_btn:hover{
+.mobiles_wrapper .delete_btn:hover {
     border-color: #076deb;
     color: #fff;
 }
-.mobiles_wrapper .delete_btn:active{
+.mobiles_wrapper .delete_btn:active {
     transform: translateY(2px);
 }
