@@ -15,15 +15,12 @@
 
     getInitialState: function() {
         return {
-            mobileList: this.props.mobiles,
-            isMobileBg: false
+            mobileList: this.props.mobiles
         };
     },
 
-    addBackgroundColor: function() {
-        this.setState({ isMobileBg: !this.state.isMobileBg });
-        // event.currentTarget.classList.toggle('mobile-bg')
-
+    addBackgroundColor: function(event) {
+        event.classList.toggle('mobile-bg');
     },
 
     deleteMobileListItem: function(id) {
@@ -44,7 +41,6 @@
                 src: item.src,
                 removeItem: this.deleteMobileListItem,
                 toggleClass: this.addBackgroundColor,
-                isMobileBg: this.state.isMobileBg,
             })
         );
         return React.DOM.div({className: 'shop_wrapper'},

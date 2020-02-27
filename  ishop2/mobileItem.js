@@ -15,13 +15,12 @@ let MobileItem = React.createClass({
     },
 
     toggleClass: function (event) {
-        this.props.toggleClass();
-        console.log(event.currentTarget);
+        this.props.toggleClass(event.currentTarget);
     },
 
     render: function () {
         return React.DOM.div({
-                className: `${'mobile'} ${this.props.isMobileBg ? 'mobile-bg' : null}`,
+                className: 'mobile',
                 key: this.props.id, onClick: this.toggleClass
             },
             React.DOM.span({className: 'name'}, 'Name: ', this.props.name),

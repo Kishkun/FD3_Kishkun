@@ -49,7 +49,7 @@ let letterEls = ['авантюризм', 'авиатехник', 'балован
     },
 
     resetListByDefault: function () {
-        this.setState({searchInput: '', stateLetter: this.state.originList});
+        this.setState({searchInput: '', stateLetter: this.state.originList, isChecked: false});
     },
 
     render: function () {
@@ -58,7 +58,7 @@ let letterEls = ['авантюризм', 'авиатехник', 'балован
         );
         return React.DOM.div({className: 'filter_wrapper'},
             React.DOM.h1({className: 'filter_title'}, this.props.title),
-            React.DOM.input({type: 'checkbox', className: 'filter_check', onClick: this.sortListByAlphabet}),
+            React.DOM.input({type: 'checkbox', checked: this.state.isChecked, className: 'filter_check', onClick: this.sortListByAlphabet}),
             React.DOM.input({
                 type: 'text',
                 className: 'filter_input',
