@@ -15,12 +15,13 @@
 
     getInitialState: function() {
         return {
-            mobileList: this.props.mobiles
+            mobileList: this.props.mobiles,
+            selectedItemId: 0
         };
     },
 
-    addBackgroundColor: function(event) {
-        event.classList.toggle('mobile-bg');
+    addBackgroundColor: function(id) {
+        id.classList.toggle('mobile-bg');
     },
 
     deleteMobileListItem: function(id) {

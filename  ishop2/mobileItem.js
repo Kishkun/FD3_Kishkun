@@ -14,8 +14,8 @@ let MobileItem = React.createClass({
         this.props.removeItem(this.props.id);
     },
 
-    toggleClass: function (event) {
-        this.props.toggleClass(event.currentTarget);
+    toggleClass: function () {
+        this.props.toggleClass(this.props.id);
     },
 
     render: function () {
