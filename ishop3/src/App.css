@@ -37,3 +37,6 @@ body {
   font-weight: 700;
   margin-bottom: 40px;
 }
+.mobile_bg {
+  background: linear-gradient(122.04deg,#14e9b6 23.38%,#076deb 82.75%);
+}

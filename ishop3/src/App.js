@@ -3,20 +3,23 @@ import PropTypes from 'prop-types';
 import './App.css';
 import Mobile from './components/mobile/Mobile';
 
-function App(props) {
-    let {title, mobiles} = props.state;
+let App = (props) => {
     return (
-    <div className="shop_wrapper">
-        <header>
-            <h1 className='shop_title'>{title}</h1>
-        </header>
-        <Mobile mobiles={mobiles}/>
-    </div>
-  );
-}
+        <div className="shop_wrapper">
+            <header>
+                <h1 className='shop_title'>{props.title}</h1>
+            </header>
+            <Mobile mobiles={props.mobiles}
+                    removeItem={props.removeItem}
+                    toggleBackgroundItem={props.toggleBackgroundItem}
+            />
+        </div>
+    );
+};
 
 App.defaultProps = {
-    title: 'Online store'
+    title: 'Online store',
+    mobiles: []
 };
 
 App.propTypes = {

@@ -2,11 +2,20 @@ import React from 'react';
 import s from './mobile.module.css';
 import MobileItem from './mobileItem';
 
-function Mobile(props) {
-    let mobiles = props.mobiles;
+let Mobile = (props) => {
+    let mobileElements = props.mobiles.map(mobile =>
+        <MobileItem key={mobile.id}
+                    id={mobile.id}
+                    name={mobile.name}
+                    model={mobile.model}
+                    price={mobile.price}
+                    src={mobile.src}
+                    removeItem={props.removeItem}
+                    toggleBackgroundItem={props.toggleBackgroundItem}
+        />);
     return (
-        <div className={s.mobiles_wrapper}>
-            <MobileItem mobiles={mobiles}/>
+        <div className={s.wrapper}>
+            {mobileElements}
         </div>
     );
 }
