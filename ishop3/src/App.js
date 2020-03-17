@@ -2,17 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './App.css';
 import Mobile from './components/mobile/Mobile';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 let App = (props) => {
     return (
         <div className="shop_wrapper">
-            <header>
-                <h1 className='shop_title'>{props.title}</h1>
-            </header>
-            <Mobile mobiles={props.mobiles}
-                    removeItem={props.removeItem}
-                    toggleBackgroundItem={props.toggleBackgroundItem}
-            />
+            <Header title={props.title} />
+            <main>
+                <Mobile mobiles={props.mobiles}
+                        removeItem={props.removeItem}
+                        toggleBackgroundItem={props.toggleBackgroundItem}
+                />
+            </main>
+            <Footer />
         </div>
     );
 };

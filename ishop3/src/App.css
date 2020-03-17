@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 *:focus {
   box-sizing: border-box;
   margin: 0;
@@ -30,12 +33,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 60px;
-}
-.shop_wrapper .shop_title {
-  text-align: center;
-  font-size: 3vw;
-  font-weight: 700;
-  margin-bottom: 40px;
 }
 .mobile_bg {
   background: linear-gradient(122.04deg,#14e9b6 23.38%,#076deb 82.75%);
