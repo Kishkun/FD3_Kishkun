@@ -1,13 +1,13 @@
 import React from 'react';
 
-let Footer = (props) => {
+let AddItem = (props) => {
     return (
-        <footer>
+        <div>
             <button className='shop_btn add_btn'>
                 <span className='btn_title'>New product</span>
             </button>
-        </footer>
+        </div>
     );
 };
 
-export default Footer;
+export default AddItem;

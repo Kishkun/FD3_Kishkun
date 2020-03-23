@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MobileList from './components/mobile/MobileList';
 import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+import AddItem from './components/mobile/addItem';
 import DisplayItem from './components/mobile/DisplayItem';
 import EditItem from './components/mobile/EditItem';
 
@@ -46,13 +46,13 @@ class App extends React.Component {
                                 editItem={this.editItem}
                                 selectedItemId={this.state.selectedItem ? this.state.selectedItem.id : null}
                     />
+                    <AddItem />
                     {this.state.selectedItem ? <DisplayItem selectedItem={this.state.selectedItem}/> : ''}
                     {this.state.editingItem ?
                         <EditItem editingItem={this.state.editingItem}
                                   handleSubmit={this.handleSubmit}
                         /> : ''}
                 </main>
-                <Footer/>
             </div>
         );
     }

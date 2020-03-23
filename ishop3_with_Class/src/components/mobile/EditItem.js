@@ -12,6 +12,7 @@ class EditItem extends React.Component {
         this.model = React.createRef();
         this.price = React.createRef();
         this.labelClass = 'input_label';
+        this.saveBtnClass = 'shop_btn save_btn';
     }
 
     handleSubmit = (e) => {
@@ -31,6 +32,7 @@ class EditItem extends React.Component {
         let newName = this.name.current.value;
         if (newName === '') {
             this.labelClass += ' invalid';
+            this.saveBtnClass += ' disabled';
             this.setState((state) =>{
                 return{
                     isDisabled: !state.isDisabled,
@@ -53,33 +55,55 @@ class EditItem extends React.Component {
         let {model, name, price, src} = this.props.editingItem;
         return (
             <form onSubmit={this.handleSubmit} className='edit_form'>
-                <ul>
-                    <li>
+                <ul className='list'>
+                    <li className='list_item'>
                         <input type='text'
                                id='name'
                                name='name'
-                               className='form_name'
+                               className='form_input'
                                ref={this.name}
                                defaultValue={name}
                                onChange={this.validationCheck}
                         />
                         <label htmlFor='name' className={this.labelClass}>Please, fill the field. Value must be a string</label>
                     </li>
-                    <li>
-                        <input type='text' ref={this.model} defaultValue={model}/>
+                    <li className='list_item'>
+                        <input
+                            type='text'
+                            id='model'
+                            name='model'
+                            className='form_input'
+                            ref={this.model}
+                            defaultValue={model}
+                        />
                     </li>
-                    <li>
-                        <input type='text' ref={this.price} defaultValue={price}/>
+                    <li className='list_item'>
+                        <input
+                            type='text'
+                            id='price'
+                            name='price'
+                            className='form_input'
+                            ref={this.price}
+                            defaultValue={price}
+                        />
                     </li>
-                    <li>
-                        <input type='text' disabled defaultValue={src}/>
+                    <li className='list_item'>
+                        <input
+                            type='text'
+                            className='form_input'
+                            disabled
+                            defaultValue={src}
+                        />
                     </li>
                 </ul>
-                <div>
-                    <button type='submit' disabled={this.state.isDisabled} className='shop_btn'>
+                <div className='form_btn_block'>
+                    <button
+                        type='submit'
+                        disabled={this.state.isDisabled}
+                        className={this.saveBtnClass}>
                         <span className='btn_title'>save</span>
                     </button>
-                    <button type='button' className='shop_btn'>
+                    <button type='button' className='shop_btn cancel_btn'>
                         <span className='btn_title'>cancel</span>
                     </button>
                 </div>
