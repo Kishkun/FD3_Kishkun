@@ -1,25 +1,38 @@
 import React from 'react';
 
 let MobileItem = (props) => {
-    let {id, name, model, price, src} = props;
+    let {id, name, model, price, src, selectedItemId} = props;
+
+    let classNames = 'mobile';
+
+    if(selectedItemId === id){
+        classNames += ' mobile-bg';
+    }
 
     let deleteItem = (event) => {
         event.stopPropagation();
         props.deleteItem(id);
     };
 
-    let toggleClass = (event) => {
-        // props.toggleBackgroundItem(event.currentTarget)
-        console.log('background');
+    let selectItem = () => {
+        props.selectItem(id);
+    };
+
+    let editItem = (event) => {
+        event.stopPropagation();
+        props.editItem(id);
     };
 
     return (
-        <div className='mobile' key={id} onClick={toggleClass}>
+        <div className={classNames} key={id} onClick={selectItem}>
             <span className='name'>Name: {name}</span>
             <span className='model'>Model: {model}</span>
             <span className='price'>Price: {price}</span>
             <button className='shop_btn delete_btn' onClick={deleteItem}>
                 <span className='btn_title'>delete</span>
+            </button>
+            <button className='shop_btn edit_btn' onClick={editItem}>
+                <span className='btn_title'>edit</span>
             </button>
             <img className='image' src={src} alt='mobile'/>
         </div>

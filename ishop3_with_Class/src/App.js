@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Mobile from './components/mobile/Mobile';
+import MobileList from './components/mobile/MobileList';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import DisplayItem from './components/mobile/DisplayItem';
+import EditItem from './components/mobile/EditItem';
 
 class App extends React.Component {
 
     state = {
         mobileList: this.props.mobiles,
+        selectedItem: null,
+        editingItem: null
     };
 
     deleteItem = (id) => {
@@ -15,7 +19,20 @@ class App extends React.Component {
             return item.id !== id
         });
         this.setState({mobileList: filteredList});
-        console.log(id);
+    };
+
+    selectItem = (id) => {
+        let selectedItem = this.state.mobileList.find(item => item.id === id);
+        this.setState({selectedItem: selectedItem});
+    };
+
+    editItem = (id) => {
+        let editingItem = this.state.mobileList.find(item => item.id === id);
+        this.setState({editingItem: editingItem});
+    };
+
+    handleSubmit = (editingItem) => {
+        this.setState({editingItem: editingItem});
     };
 
     render() {
@@ -23,9 +40,17 @@ class App extends React.Component {
             <div className="shop_wrapper">
                 <Header title={this.props.title}/>
                 <main>
-                    <Mobile mobiles={this.state.mobileList}
-                            deleteItem={this.deleteItem}
+                    <MobileList mobiles={this.state.mobileList}
+                                deleteItem={this.deleteItem}
+                                selectItem={this.selectItem}
+                                editItem={this.editItem}
+                                selectedItemId={this.state.selectedItem ? this.state.selectedItem.id : null}
                     />
+                    {this.state.selectedItem ? <DisplayItem selectedItem={this.state.selectedItem}/> : ''}
+                    {this.state.editingItem ?
+                        <EditItem editingItem={this.state.editingItem}
+                                  handleSubmit={this.handleSubmit}
+                        /> : ''}
                 </main>
                 <Footer/>
             </div>

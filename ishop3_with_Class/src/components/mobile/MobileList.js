@@ -1,7 +1,7 @@
 import React from 'react';
-import MobileItem from './mobileItem';
+import MobileItem from './MobileItem';
 
-let Mobile = (props) => {
+let MobileList = (props) => {
     let mobileElements = props.mobiles.map(mobile =>
         <MobileItem key={mobile.id}
                     id={mobile.id}
@@ -10,6 +10,9 @@ let Mobile = (props) => {
                     price={mobile.price}
                     src={mobile.src}
                     deleteItem={props.deleteItem}
+                    selectItem={props.selectItem}
+                    editItem={props.editItem}
+                    selectedItemId={props.selectedItemId}
         />);
     return (
         <div className='mobiles_wrapper'>
@@ -18,4 +21,4 @@ let Mobile = (props) => {
     );
 };
 
-export default Mobile;
+export default MobileList;
