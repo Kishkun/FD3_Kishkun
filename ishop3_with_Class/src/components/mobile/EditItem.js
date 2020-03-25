@@ -5,8 +5,7 @@ class EditItem extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isDisabled: false,
-            name: ''
+            isDisabled: false
         };
         this.name = React.createRef();
         this.model = React.createRef();
@@ -33,12 +32,14 @@ class EditItem extends React.Component {
         if (newName === '') {
             this.labelClass += ' invalid';
             this.saveBtnClass += ' disabled';
-            this.setState((state) =>{
-                return{
-                    isDisabled: !state.isDisabled,
-                    newName: state.name
+            this.setState((state) => {
+                return {
+                    isDisabled: !state.isDisabled
                 }
             });
+        } else {
+            this.labelClass = 'input_label';
+            this.saveBtnClass = 'shop_btn save_btn';
         }
     };
 
@@ -65,7 +66,8 @@ class EditItem extends React.Component {
                                defaultValue={name}
                                onChange={this.validationCheck}
                         />
-                        <label htmlFor='name' className={this.labelClass}>Please, fill the field. Value must be a string</label>
+                        <label htmlFor='name' className={this.labelClass}>Please, fill the field. Value must be a
+                            string</label>
                     </li>
                     <li className='list_item'>
                         <input
