@@ -1,16 +1,16 @@
 import React from 'react';
 
-class EditItem extends React.Component {
+class AddItem extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
             isDisabled: this.props.isDisabled,
             inputs: {
-                name: this.props.editingItem.name,
-                model: this.props.editingItem.model,
-                price: this.props.editingItem.price,
-                src: this.props.editingItem.src
+                name: '',
+                model: '',
+                price: '',
+                src: 'assets/img/huawei_p20.jpg'
             },
             errors: {
                 name: '',
@@ -18,23 +18,7 @@ class EditItem extends React.Component {
                 price: ''
             }
         };
-        this.saveBtnClass = 'shop_btn save_btn';
     }
-
-    handleSubmit = (e) => {
-        e.preventDefault();
-        let newItem = this.props.editingItem;
-        newItem.name = this.state.inputs.name;
-        newItem.model = this.state.inputs.model;
-        newItem.price = this.state.inputs.price;
-        newItem.src = this.state.inputs.src;
-        this.setState({isDisabled: true});
-        this.saveBtnClass += ' disabled';
-        if(newItem.name !== '' && newItem.model !== '' && newItem.price !== ''){
-            this.props.handleSubmit();
-        }
-        this.validationCheck.bind(this);
-    };
 
     handlerOnChange = (e) => {
         let {name, value} = e.target;
@@ -42,14 +26,36 @@ class EditItem extends React.Component {
             inputs: {
                 ...this.state.inputs,
                 [name]: value
-            }});
+            }
+        });
+    };
+
+    addSubmit = (e) => {
+        e.preventDefault();
+        let newItem = {
+            name: this.state.inputs.name,
+            model: this.state.inputs.model,
+            price: this.state.inputs.price,
+            src: this.state.inputs.src,
+        };
+        if(newItem.name !== '' && newItem.model !== '' && newItem.price !== ''){
+            this.props.addItem(newItem);
+        }
+        this.setState({
+            inputs: {
+                name: '',
+                model: '',
+                price: '',
+                src: this.state.inputs.src
+            }
+        });
+        this.validationCheck.bind(this);
     };
 
     validationCheck = (e) => {
         let { inputs } = this.state;
         let err = 'Please, fill the field. Value must be a string';
         if (inputs[e.target.name].length === 0) {
-            this.saveBtnClass += ' disabled';
             this.setState({
                 isDisabled: true,
                 errors: {
@@ -58,7 +64,6 @@ class EditItem extends React.Component {
                 }
             });
         } else {
-            this.saveBtnClass = 'shop_btn save_btn';
             this.setState({
                 isDisabled: false,
                 errors: {
@@ -70,19 +75,20 @@ class EditItem extends React.Component {
     };
 
     render() {
-        const { inputs, errors } = this.state;
+        let {inputs, errors} = this.state;
         return (
-            <form onSubmit={this.handleSubmit} className='edit_form'>
+            <form onSubmit={this.addSubmit} className='add_form'>
                 <ul className='list'>
                     <li className='list_item'>
-                        <input type='text'
-                               id='name'
-                               name='name'
-                               className='form_input'
-                               defaultValue={inputs.name}
-                               onChange={this.handlerOnChange}
-                               onBlur={this.validationCheck}
-                               required
+                        <input
+                            type='text'
+                            id='name'
+                            name='name'
+                            className='form_input'
+                            defaultValue={inputs.name}
+                            onChange={this.handlerOnChange}
+                            onBlur={this.validationCheck}
+                            required
                         />
                         <label htmlFor='name' className='error_label'>{errors.name}</label>
                     </li>
@@ -118,26 +124,27 @@ class EditItem extends React.Component {
                             className='form_input'
                             disabled
                             defaultValue={inputs.src}
+                            onChange={this.handlerOnChange}
+                            required
                         />
                     </li>
                 </ul>
                 <div className='form_btn_block'>
                     <button
                         type='submit'
-                        disabled={this.state.isDisabled}
-                        className={this.saveBtnClass}>
-                        <span className='btn_title'>save</span>
+                        className='shop_btn add_form_btn'>
+                        <span className='btn_title'>Add</span>
                     </button>
                     <button
                         type='button'
                         className='shop_btn cancel_btn'
                         onClick={this.props.closeItem}>
-                        <span className='btn_title'>cancel</span>
+                        <span className='btn_title'>Reset</span>
                     </button>
                 </div>
             </form>
         );
     }
-}
+};
 
-export default EditItem;
+export default AddItem;

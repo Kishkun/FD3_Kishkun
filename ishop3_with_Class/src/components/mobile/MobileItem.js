@@ -1,42 +1,51 @@
 import React from 'react';
 
-let MobileItem = (props) => {
-    let {id, name, model, price, src, selectedItemId} = props;
+class MobileItem extends React.Component {
 
-    let classNames = 'mobile';
-
-    if(selectedItemId === id){
-        classNames += ' mobile-bg';
+    constructor(props) {
+        super(props);
     }
 
-    let deleteItem = (event) => {
+    deleteItem = (event) => {
         event.stopPropagation();
-        props.deleteItem(id);
+        this.props.deleteItem(this.props.id);
     };
 
-    let selectItem = () => {
-        props.selectItem(id);
+    selectItem = () => {
+        this.props.selectItem(this.props.id);
     };
 
-    let editItem = (event) => {
+    editItem = (event) => {
         event.stopPropagation();
-        props.editItem(id);
+        this.props.editItem(this.props.id);
     };
 
-    return (
-        <div className={classNames} key={id} onClick={selectItem}>
-            <span className='name'>Name: {name}</span>
-            <span className='model'>Model: {model}</span>
-            <span className='price'>Price: {price}</span>
-            <button className='shop_btn delete_btn' onClick={deleteItem}>
-                <span className='btn_title'>delete</span>
-            </button>
-            <button className='shop_btn edit_btn' onClick={editItem}>
-                <span className='btn_title'>edit</span>
-            </button>
-            <img className='image' src={src} alt='mobile'/>
-        </div>
-    );
+    render() {
+        let mobileClass = 'mobile';
+
+        if (this.props.selectedItemId === this.props.id) {
+            mobileClass += ' mobile-bg';
+        }
+
+        return (
+            <div className={mobileClass} key={this.props.id} onClick={this.selectItem}>
+                <span className='name'>Name: {this.props.name}</span>
+                <span className='model'>Model: {this.props.model}</span>
+                <span className='price'>Price: {this.props.price}</span>
+                <button className={this.props.isDisabled ? 'shop_btn delete_btn disabled' : 'shop_btn delete_btn'}
+                        onClick={this.deleteItem}
+                        disabled={this.props.isDisabled}>
+                    <span className='btn_title'>delete</span>
+                </button>
+                <button className={this.props.isDisabled ? 'shop_btn edit_btn disabled' : 'shop_btn edit_btn'}
+                        onClick={this.editItem}
+                        disabled={this.props.isDisabled}>
+                    <span className='btn_title'>edit</span>
+                </button>
+                <img className='image' src={this.props.src} alt='mobile'/>
+            </div>
+        );
+    }
 };
 
 export default MobileItem;
