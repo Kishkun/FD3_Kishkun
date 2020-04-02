@@ -5,6 +5,7 @@ import './js/common';
 import React from 'react'
 import ReactDOM, { render } from 'react-dom'
 import RainbowFrame from './RainbowFrame'
+let colors = ['red','orange', 'yellow','green', '#00BFFF', 'blue', 'purple'];
 
-ReactDOM.render(<RainbowFrame/>,
+ReactDOM.render(<RainbowFrame title='Task RainbowFrame' colors={colors}/>,
     document.getElementById('react-container'));

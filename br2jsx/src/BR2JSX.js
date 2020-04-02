@@ -9,16 +9,28 @@ class BR2JSX extends React.Component {
     }
 
     render() {
+        let block = {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent:'center',
+            width: '200px',
+            height: '200px',
+            color: '#fff',
+            background: 'gray',
+            margin: '5vh auto'
+        };
         let re = /(<br>)|(<br \/>)/gi;
         let newStr = this.props.text.replace(re, '<br/>').split('<br/>');
         return (
             <div className={'br2jsx'}>
                 <h1 style={{color:'#000', textAlign: 'center', fontSize: '2vw'}}>{this.props.title}</h1>
-                {newStr.map((text, index) => (
-                    <React.Fragment key={index}>
-                        {text} <br/>
-                    </React.Fragment>
-                ))}
+                <div style={block}>
+                    {newStr.map((text, index) => (
+                        <React.Fragment key={index}>
+                            {text} <br/>
+                        </React.Fragment>
+                    ))}
+                </div>
             </div>
         );
     }
