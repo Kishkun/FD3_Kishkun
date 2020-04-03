@@ -23,7 +23,7 @@ class RainbowFrame extends React.Component {
         };
         let block = this.props.colors.reduce((acc, color, index) =>
                 <div key={index} style={{border: `10px solid ${color}`, padding: '10px'}}>{acc}</div>
-            , 'Hello');
+            , this.props.children);
         return (
             <div className='rainbowFrame'>
                 <h1 style={title}>{this.props.title}</h1>
