@@ -4,8 +4,9 @@ import './js/common';
 
 import React from 'react'
 import ReactDOM, { render } from 'react-dom'
-import RainbowFrameHOC from './RainbowFrameHOC'
+import {withRainbowFrame} from './components/withRainbowFrame'
+import Fragment from './Fragment'
 let colors = ['red','orange', 'yellow','green', '#00BFFF', 'blue', 'purple'];
-
-ReactDOM.render(<RainbowFrameHOC title='Task RainbowFrame' colors={colors}>Hello</RainbowFrameHOC>,
+let FramedFragment=withRainbowFrame(colors)(Fragment);
+ReactDOM.render(<FramedFragment>Hello</FramedFragment>,
     document.getElementById('react-container'));
