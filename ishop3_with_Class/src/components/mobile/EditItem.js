@@ -33,7 +33,6 @@ class EditItem extends React.Component {
         if(newItem.name !== '' && newItem.model !== '' && newItem.price !== ''){
             this.props.handleSubmit();
         }
-        this.validationCheck.bind(this);
     };
 
     handlerOnChange = (e) => {
@@ -82,7 +81,6 @@ class EditItem extends React.Component {
                                defaultValue={inputs.name}
                                onChange={this.handlerOnChange}
                                onBlur={this.validationCheck}
-                               required
                         />
                         <label htmlFor='name' className='error_label'>{errors.name}</label>
                     </li>
@@ -95,7 +93,6 @@ class EditItem extends React.Component {
                             defaultValue={inputs.model}
                             onChange={this.handlerOnChange}
                             onBlur={this.validationCheck}
-                            required
                         />
                         <label htmlFor='model' className='error_label'>{errors.model}</label>
                     </li>
@@ -108,7 +105,6 @@ class EditItem extends React.Component {
                             defaultValue={inputs.price}
                             onChange={this.handlerOnChange}
                             onBlur={this.validationCheck}
-                            required
                         />
                         <label htmlFor='price' className='error_label'>{errors.price}</label>
                     </li>

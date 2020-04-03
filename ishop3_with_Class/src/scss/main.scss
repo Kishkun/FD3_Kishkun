@@ -18,7 +18,6 @@ h1, h2, h3, h4, h5,
 p, td, span, div {
   padding: 0;
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 
 html,
@@ -66,6 +65,7 @@ body {
       font-size: 1vw;
       display: block;
       margin-bottom: 10px;
+      font-weight: 900;
     }
 
     .mobile {
@@ -79,8 +79,11 @@ body {
       }
 
       &.disabled {
-        pointer-events: none;
         cursor: not-allowed;
+
+        &:hover{
+          box-shadow: none;
+        }
       }
 
       &:hover{
@@ -127,10 +130,6 @@ body {
   text-align: center;
   flex: 0 0 50%;
   margin: 40px auto 0;
-
-  .list {
-    font-family:Lato Semibold;
-  }
 
   .list_item {
     position: relative;

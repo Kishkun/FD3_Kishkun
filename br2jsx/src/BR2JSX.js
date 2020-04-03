@@ -22,7 +22,7 @@ class BR2JSX extends React.Component {
         let re = /(<br>)|(<br \/>)/gi;
         let newStr = this.props.text.replace(re, '<br/>').split('<br/>');
         let newText = newStr.map((text, index) => {
-            let br = !!index;
+            let br = index ? true : false;
             return (
                 <React.Fragment key={index}>
                     {br && <br/>} {text}

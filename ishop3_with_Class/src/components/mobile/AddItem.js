@@ -18,6 +18,7 @@ class AddItem extends React.Component {
                 price: ''
             }
         };
+        this.addBtnClass = 'shop_btn add_form_btn';
     }
 
     handlerOnChange = (e) => {
@@ -49,13 +50,15 @@ class AddItem extends React.Component {
                 src: this.state.inputs.src
             }
         });
-        this.validationCheck.bind(this);
+        this.setState({isDisabled: true});
+        this.addBtnClass += ' disabled';
     };
 
     validationCheck = (e) => {
         let { inputs } = this.state;
         let err = 'Please, fill the field. Value must be a string';
         if (inputs[e.target.name].length === 0) {
+            this.addBtnClass += ' disabled';
             this.setState({
                 isDisabled: true,
                 errors: {
@@ -64,6 +67,7 @@ class AddItem extends React.Component {
                 }
             });
         } else {
+            this.addBtnClass = 'shop_btn add_form_btn';
             this.setState({
                 isDisabled: false,
                 errors: {
@@ -88,7 +92,6 @@ class AddItem extends React.Component {
                             defaultValue={inputs.name}
                             onChange={this.handlerOnChange}
                             onBlur={this.validationCheck}
-                            required
                         />
                         <label htmlFor='name' className='error_label'>{errors.name}</label>
                     </li>
@@ -101,7 +104,6 @@ class AddItem extends React.Component {
                             defaultValue={inputs.model}
                             onChange={this.handlerOnChange}
                             onBlur={this.validationCheck}
-                            required
                         />
                         <label htmlFor='model' className='error_label'>{errors.model}</label>
                     </li>
@@ -114,7 +116,6 @@ class AddItem extends React.Component {
                             defaultValue={inputs.price}
                             onChange={this.handlerOnChange}
                             onBlur={this.validationCheck}
-                            required
                         />
                         <label htmlFor='price' className='error_label'>{errors.price}</label>
                     </li>
@@ -125,21 +126,20 @@ class AddItem extends React.Component {
                             disabled
                             defaultValue={inputs.src}
                             onChange={this.handlerOnChange}
-                            required
                         />
                     </li>
                 </ul>
                 <div className='form_btn_block'>
                     <button
                         type='submit'
-                        className='shop_btn add_form_btn'>
+                        className={this.addBtnClass}>
                         <span className='btn_title'>Add</span>
                     </button>
                     <button
                         type='button'
                         className='shop_btn cancel_btn'
                         onClick={this.props.closeItem}>
-                        <span className='btn_title'>Reset</span>
+                        <span className='btn_title'>Cancel</span>
                     </button>
                 </div>
             </form>

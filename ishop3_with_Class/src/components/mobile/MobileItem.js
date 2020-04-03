@@ -26,9 +26,12 @@ class MobileItem extends React.Component {
         if (this.props.selectedItemId === this.props.id) {
             mobileClass += ' mobile-bg';
         }
+        if (this.props.isDisabled) {
+            mobileClass += ' disabled';
+        }
 
         return (
-            <div className={mobileClass} key={this.props.id} onClick={this.selectItem}>
+            <div className={mobileClass} key={this.props.id} onClick={this.props.isDisabled ? null : this.selectItem}>
                 <span className='name'>Name: {this.props.name}</span>
                 <span className='model'>Model: {this.props.model}</span>
                 <span className='price'>Price: {this.props.price}</span>
