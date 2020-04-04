@@ -16,23 +16,15 @@ import React from 'react';
 // }
 
 function withRainbowFrame(colors) {
-    return function(Component) {
+    return function (Component) {
         return props => (
-            <div style={{border: `10px solid ${colors[0]}`, padding: '10px'}}>
-                <div style={{border: `10px solid ${colors[1]}`, padding: '10px'}}>
-                    <div style={{border: `10px solid ${colors[2]}`, padding: '10px'}}>
-                        <div style={{border: `10px solid ${colors[3]}`, padding: '10px'}}>
-                            <div style={{border: `10px solid ${colors[4]}`, padding: '10px'}}>
-                                <div style={{border: `10px solid ${colors[5]}`, padding: '10px'}}>
-                                    <div style={{border: `10px solid ${colors[6]}`, padding: '10px'}}>
-                                        <Component {...props} />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            colors.reduce((acc, color, index) => {
+                return (
+                    <div key={index} style={{border: `10px solid ${color}`, padding: '10px'}}>
+                        {acc}
                     </div>
-                </div>
-            </div>
+                )
+            }, props.children)
         );
     };
 }
