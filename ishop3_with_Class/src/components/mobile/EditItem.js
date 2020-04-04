@@ -23,14 +23,15 @@ class EditItem extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        let newItem = this.props.editingItem;
-        newItem.name = this.state.inputs.name;
-        newItem.model = this.state.inputs.model;
-        newItem.price = this.state.inputs.price;
-        newItem.src = this.state.inputs.src;
+        let { inputs } = this.state;
         this.setState({isDisabled: true});
         this.saveBtnClass += ' disabled';
-        if(newItem.name !== '' && newItem.model !== '' && newItem.price !== ''){
+        if(inputs.name !== '' && inputs.model !== '' && inputs.price !== ''){
+            let newItem = this.props.editingItem;
+            newItem.name = inputs.name;
+            newItem.model = inputs.model;
+            newItem.price = inputs.price;
+            newItem.src = inputs.src;
             this.props.handleSubmit();
         }
     };
