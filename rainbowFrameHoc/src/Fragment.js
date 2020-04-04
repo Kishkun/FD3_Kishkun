@@ -9,12 +9,8 @@ class Fragment extends React.Component {
     }
 
     render() {
-        let style = {
-            border: `10px solid ${this.props.color}`,
-            padding: '20px'
-        };
         return (
-            <div style={style}>{this.props.children}</div>
+            <div>{this.props.children}</div>
         );
     }
 }
