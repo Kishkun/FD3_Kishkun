@@ -15,6 +15,22 @@ import React from 'react';
 //     };
 // }
 
+var arr = [2, 1, 3, 5, 4, 0];
+
+let newAdrray = items => {
+    return arr
+        .sort(function(a, b) {return a < b ? -1 : a > b ? 1 : 0})
+        .map(function(item){
+            return '<div>' + item + '</div>';
+        });
+}
+
+let newArray = arr
+    .sort(function(a, b) {return a < b ? -1 : a > b ? 1 : 0})
+    .map(function(item){
+        return '<div>' + item + '</div>';
+    });
+
 
 function withRainbowFrame(colors) {
     return function (Component) {
@@ -25,7 +41,7 @@ function withRainbowFrame(colors) {
                         {acc}
                     </div>
                 )
-            }, <Component {...props} />)
+            }, props.children)
         );
     };
 }
