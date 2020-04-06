@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class Fragment extends React.Component {
+class App extends React.Component {
 
     constructor(props) {
         super(props);
@@ -9,8 +9,9 @@ class Fragment extends React.Component {
     }
 
     render() {
+        console.log(this.props);
         return (
-            <div>{this.props.children}</div>
+            <div>Mobile title</div>
         );
     }
 }
@@ -19,4 +20,4 @@ Fragment.defaultProps = {};
 
 Fragment.propTypes = {};
 
-export default Fragment;
+export default App;
