@@ -1,0 +1,47 @@
+{
+  "title": "Mobile Company",
+  "companies": [
+    {
+      "id": 1,
+      "name": "Velcom"
+    },
+    {
+      "id": 2,
+      "name": "MTS"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "firstName": "Иванов",
+      "secondName": "Иван",
+      "patronymic": "Иванович",
+      "balance": 200,
+      "status": true
+    },
+    {
+      "id": 1,
+      "firstName": "Сидоров",
+      "secondName": "Сидор",
+      "patronymic": "Сидорович",
+      "balance": 250,
+      "status": true
+    },
+    {
+      "id": 1,
+      "firstName": "Петров",
+      "secondName": "Петр",
+      "patronymic": "Петрович",
+      "balance": 180,
+      "status": true
+    },
+    {
+      "id": 1,
+      "firstName": "Григорьев",
+      "secondName": "Григорий",
+      "patronymic": "Григорьевич",
+      "balance": -220,
+      "status": true
+    }
+  ]
+}

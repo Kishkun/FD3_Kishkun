@@ -1,17 +1,5 @@
 @import "utils/libs";
-@import "utils/mixins";
-@import "utils/vars";
-@import "utils/fonts";
 @import "utils/reset";
-@import "utils/animation";
-@import "utils/mobile";
-
-
-body,
-html,
-#react-container {
-  min-height: 100vh;
-}
 
 body,
 h1, h2, h3, h4, h5,
@@ -34,7 +22,44 @@ body {
   /*400 700 900*/
 }
 
+a:active,
+button:active{
+  transform: translateY(2px);
+}
+
 #react-container {
   padding: 1em;
   background-color: #EEE;
+  min-height: 100vh;
+}
+
+.company_wrapper{
+  padding-top: 40px;
+}
+
+.company_title{
+  font-weight: 900;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.name_block{
+  margin-top: 10vh;
+
+  .name_btn{
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #000;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &.active{
+      background: #f3e1e1;
+      box-shadow: 1px 1px 3px #000;
+    }
+  }
+  .name{
+
+  }
 }

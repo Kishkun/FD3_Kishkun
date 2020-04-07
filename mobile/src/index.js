@@ -3,10 +3,12 @@ import './scss/main.scss';
 import './js/common';
 
 import React from 'react'
-import ReactDOM, {render} from 'react-dom'
+import ReactDOM from 'react-dom'
 import App from './App'
+import data from './static/clients'
 
-let colors = ['red', 'orange', 'yellow', 'green', '#00BFFF', 'blue', 'purple'];
-
-ReactDOM.render(<App colors={colors}/>,
+ReactDOM.render(<App
+        clients={data.clients}
+        title={data.title}
+        companies={data.companies}/>,
     document.getElementById('react-container'));
