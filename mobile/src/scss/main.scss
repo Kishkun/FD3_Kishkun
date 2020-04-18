@@ -1,6 +1,11 @@
 @import "utils/libs";
 @import "utils/reset";
 
+$black-color: #111111;
+$white-color: #ffffff;
+$error-color: #ff0000;
+$warning-color: #14e9b6;
+
 body,
 h1, h2, h3, h4, h5,
 p, td, span, div {
@@ -18,12 +23,12 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   color: #2B2A29;
-  background-color: #ffffff;
+  background-color: $white-color;
   /*400 700 900*/
 }
 
 a:active,
-button:active{
+button:active {
   transform: translateY(2px);
 }
 
@@ -33,33 +38,202 @@ button:active{
   min-height: 100vh;
 }
 
-.company_wrapper{
+.company_wrapper {
   padding-top: 40px;
 }
 
-.company_title{
+.company_title {
   font-weight: 900;
   font-size: 2vw;
   text-align: center;
 }
 
-.name_block{
+.name_block {
   margin-top: 10vh;
 
-  .name_btn{
+  .name_btn {
     padding: 5px;
     margin: 5px;
     border: 1px solid #000;
-    background: #fff;
+    background: $white-color;
     cursor: pointer;
     transition: all 0.3s linear;
 
-    &.active{
+    &.active {
       background: #f3e1e1;
       box-shadow: 1px 1px 3px #000;
     }
   }
-  .name{
 
+  .name {
+
+  }
+}
+
+.filter_block {
+  padding: 5px 0;
+}
+
+.clients_wrapper {
+  width: max-content;
+  border-right: 1px solid $black-color;
+  border-left: 1px solid $black-color;
+  border-bottom: 1px solid $black-color;
+
+  .clients_title {
+    display: flex;
+
+    .th {
+      color: $black-color;
+      font-weight: 600;
+      width: 150px;
+      border-top: 1px solid $black-color;
+      padding: 15px;
+    }
+
+    .button_th {
+      text-align: right;
+    }
+  }
+
+  .client_block {
+    display: flex;
+
+    .td {
+      border-top: 1px solid $black-color;
+      width: 150px;
+      padding: 15px;
+    }
+
+    .button_td {
+      padding: 10px;
+      text-align: right;
+    }
+
+    .status {
+
+      &.active {
+        background: #14e9b6;
+      }
+
+      &.disabled {
+        background: $error-color;
+      }
+    }
+  }
+}
+
+.clients_btn {
+  padding: 5px;
+  border: 1px solid #000;
+  background: $white-color;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+  &.active {
+    background: #f3e1e1;
+    box-shadow: 1px 1px 3px #000;
+  }
+
+  &.disabled{
+    background: $error-color;
+    color: $black-color;
+    cursor: not-allowed;
+
+    &:active{
+      transform: none;
+    }
+  }
+}
+
+.edit_btn {
+  color: $white-color;
+  background: $warning-color;
+}
+
+.delete_btn {
+  color: $white-color;
+  background: $error-color;
+}
+
+.add_btn {
+
+}
+
+.save_btn {
+  padding: 15px;
+}
+
+.cancel_btn {
+  color: $white-color;
+  background: $error-color;
+  padding: 15px;
+}
+
+.edit_client_form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #11111173;
+  width: 100vw;
+  height: 100vh;
+  color: $white-color;
+
+  .list {
+
+    .list_item {
+
+      .form_input {
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 2px solid transparent;
+
+        &.error{
+          border: 2px solid $error-color;
+        }
+      }
+    }
+  }
+
+  .form_btn_block {
+    display: flex;
+    justify-content: space-between;
+    width: 225px;
+  }
+}
+
+.add_client_form{
+  width: max-content;
+
+  .list{
+    display: flex;
+    width: 100%;
+    text-align: center;
+
+    .list_item{
+
+      .form_input{
+        margin: 5px;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 2px solid rgba(0,0,0,0);
+
+        &.error{
+          border: 2px solid $error-color;
+        }
+      }
+    }
+  }
+  .form_btn_block{
+    width: 100%;
+    text-align: center;
+
+    .clients_btn{
+      margin: 5px;
+    }
   }
 }

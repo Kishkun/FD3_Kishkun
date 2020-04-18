@@ -12,7 +12,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       warnings: true,
       errors: true
     },
-    port: 9999
+    port: 1212
   },
   plugins: [
     new webpack.SourceMapDevToolPlugin({

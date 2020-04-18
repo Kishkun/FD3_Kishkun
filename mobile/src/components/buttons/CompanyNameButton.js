@@ -1,14 +1,15 @@
 import React from 'react';
+import myEvents from './../../events';
 
-const ShowButton = (props) => {
+const CompanyNameButton = (props) => {
     let item = props.item;
-    return(
+    return (
         <button
             type='button'
             key={item.id}
             className={props.activeCompanyId === item ? 'name_btn active' : 'name_btn'}
-            onClick={() => props.showNameCompany(item)}>{item.name}</button>
+            onClick={() => myEvents.emit('changedName', item)}>{item.name}</button>
     )
 };
 
-export default ShowButton;
+export default CompanyNameButton;

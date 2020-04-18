@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`работа AddedClientButton 1`] = `
+<button
+  className="clients_btn add_btn"
+  onClick={[Function]}
+  type="button"
+>
+  Добавить клиента
+</button>
+`;
