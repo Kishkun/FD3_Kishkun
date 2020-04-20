@@ -47,12 +47,15 @@ class EditClientItem extends React.PureComponent {
         let secondName = this.secondNameRef.current.value;
         let patronymic = this.patronymicRef.current.value;
         let balance = this.balanceRef.current.value;
-        let newItem = {...this.props.editingItem};
-        newItem.firstName = firstName;
-        newItem.secondName = secondName;
-        newItem.patronymic = patronymic;
-        newItem.balance = +balance;
-        newItem.status = this.state.inputs.status;
+        let newItem = {
+            ...this.props.editingItem,
+            firstName: firstName,
+            secondName: secondName,
+            patronymic: patronymic,
+            balance: +balance,
+            status: this.state.inputs.status
+
+        };
         if (firstName && secondName && patronymic && balance) {
             myEvents.emit('onClientChange', newItem);
         }

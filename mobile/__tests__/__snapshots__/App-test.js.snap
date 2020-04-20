@@ -303,3 +303,200 @@ exports[`тестирование добавление клиента 2`] = `
   </form>
 </div>
 `;
+
+exports[`тестирование добавление клиента 3`] = `
+<div
+  className="company_wrapper"
+>
+  <h1
+    className="company_title"
+  >
+    Test App
+  </h1>
+  <div
+    className="name_block"
+  >
+    <button
+      className="name_btn active"
+      onClick={[Function]}
+      type="button"
+    >
+      Velcom
+    </button>
+    <p
+      className="name"
+    >
+      Компания: 
+      Velcom
+    </p>
+  </div>
+  <hr />
+  <div
+    className="filter_block"
+  >
+    <button
+      className="clients_btn active"
+      onClick={[Function]}
+      type="button"
+    >
+      Все
+    </button>
+    <button
+      className="clients_btn"
+      onClick={[Function]}
+      type="button"
+    >
+      Активные
+    </button>
+    <button
+      className="clients_btn"
+      onClick={[Function]}
+      type="button"
+    >
+      Заблокированые
+    </button>
+  </div>
+  <hr />
+  <div
+    className="clients_wrapper"
+  >
+    <div
+      className="clients_title"
+    >
+      <div
+        className="th"
+      >
+        Фамилия
+      </div>
+      <div
+        className="th"
+      >
+        Имя
+      </div>
+      <div
+        className="th"
+      >
+        Отчество
+      </div>
+      <div
+        className="th"
+      >
+        Баланс
+      </div>
+      <div
+        className="th"
+      >
+        Статус
+      </div>
+      <div
+        className="th button_th"
+      >
+        Редактировать
+      </div>
+      <div
+        className="th button_th"
+      >
+        Удалить
+      </div>
+    </div>
+  </div>
+  <hr />
+  <button
+    className="clients_btn add_btn"
+    onClick={[Function]}
+    type="button"
+  >
+    Добавить клиента
+  </button>
+  <form
+    className="add_client_form"
+    onSubmit={[Function]}
+  >
+    <ul
+      className="list"
+    >
+      <li
+        className="list_item"
+      >
+        <label
+          htmlFor="firstName"
+        >
+          <input
+            className="form_input"
+            defaultValue=""
+            id="firstName"
+            name="firstName"
+            onBlur={[Function]}
+            type="text"
+          />
+        </label>
+      </li>
+      <li
+        className="list_item"
+      >
+        <label
+          htmlFor="secondName"
+        >
+          <input
+            className="form_input"
+            defaultValue=""
+            id="secondName"
+            name="secondName"
+            onBlur={[Function]}
+            type="text"
+          />
+        </label>
+      </li>
+      <li
+        className="list_item"
+      >
+        <label
+          htmlFor="patronymic"
+        >
+          <input
+            className="form_input"
+            defaultValue=""
+            id="patronymic"
+            name="patronymic"
+            onBlur={[Function]}
+            type="text"
+          />
+        </label>
+      </li>
+      <li
+        className="list_item"
+      >
+        <label
+          htmlFor="balance"
+        >
+          <input
+            className="form_input"
+            defaultValue=""
+            id="balance"
+            name="balance"
+            onBlur={[Function]}
+            type="number"
+          />
+        </label>
+      </li>
+    </ul>
+    <div
+      className="form_btn_block"
+    >
+      <button
+        className="clients_btn save_btn"
+        type="submit"
+      >
+        save
+      </button>
+      <button
+        className="clients_btn cancel_btn"
+        onClick={[Function]}
+        type="button"
+      >
+        cancel
+      </button>
+    </div>
+  </form>
+</div>
+`;

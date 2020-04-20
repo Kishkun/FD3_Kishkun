@@ -33,26 +33,39 @@ test('тестирование добавление клиента', () => {
     componentTree = component.toJSON();
     expect(componentTree).toMatchSnapshot();
 
+    let addSubmit = component.root.findByType(AddClientItem).findByType('form');
+
+    const firstName = component.root.findByType(AddClientItem).find(
+        (el) => el.type === 'input' && el.props.name === 'firstName');
+
+    const secondName = component.root.findByType(AddClientItem).find(
+        (el) => el.type === 'input' && el.props.name === 'secondName');
+
+    const patronymic = component.root.findByType(AddClientItem).find(
+        (el) => el.type === 'input' && el.props.name === 'patronymic');
+
+    const balance = component.root.findByType(AddClientItem).find(
+        (el) => el.type === 'input' && el.props.name === 'balance');
+
+    firstName.value = 'Alex';
 
     let newItem = {
-        firstName: 'Alex',
+        firstName: firstName.value,
         secondName: 'Kishkun',
         patronymic: 'Vladimirovich',
         balance: 1000,
         status: true
     };
-    // let input = component.root.findByType(AddClientItem).findAllByType('input');
-    //
-    // input[0].value = 'alex';
-    // console.log( input[1].value);
-    // let addForm = component.root.findByType(AddClientItem).findByType('form');
-    // addForm.props.onSubmit();
 
-    // let closeButton = component.root.findByType(AddClientItem).findAllByType('button');
-    // console.log(closeButton[1]);
-    //
-    // closeButton[1].props.onClick();
-    //
-    // componentTree = component.toJSON();
-    // expect(componentTree).toMatchSnapshot();
+    addSubmit.props.onSubmit({
+        preventDefault: () => {},
+        newItem
+    });
+
+    // myEvents.on('onAddItem', function () {
+    //     return clients.push(newItem);
+    // });
+
+    componentTree = component.toJSON();
+    expect(componentTree).toMatchSnapshot();
 });

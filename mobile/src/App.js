@@ -49,7 +49,7 @@ class App extends React.PureComponent {
         myEvents.on('onAddItem', this.onAddItem.bind(this));
     }
 
-    minID = 6;
+    minID = 5;
 
     createItem = (item) => {
         return {

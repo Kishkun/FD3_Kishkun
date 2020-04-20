@@ -3,7 +3,6 @@ import renderer from 'react-test-renderer';
 import AddedClientButton from '../src/components/buttons/AddedClientButton';
 import myEvents from '../src/events';
 
-
 test('работа AddedClientButton', () => {
 
     const component = renderer.create(
