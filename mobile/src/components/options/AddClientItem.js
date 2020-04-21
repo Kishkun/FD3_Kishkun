@@ -40,7 +40,7 @@ class AddClientItem extends React.PureComponent {
             status: this.state.inputs.status,
         };
         if (newItem.firstName && newItem.secondName && newItem.patronymic && newItem.balance) {
-            myEvents.emit('onAddItem', newItem)
+            myEvents.emit('onAddItem', newItem);
         }
         this.setState({
             inputs: {
@@ -52,7 +52,6 @@ class AddClientItem extends React.PureComponent {
             isDisabled: true
         });
     };
-
 
     validationCheck = (item) => {
         if (item.current.value.length === 0) {

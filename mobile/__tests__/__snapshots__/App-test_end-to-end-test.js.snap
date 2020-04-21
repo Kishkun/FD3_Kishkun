@@ -1,0 +1,667 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`тестирование добавление клиента end-to-end 1`] = `
+<App
+  clients={Array []}
+  companies={
+    Array [
+      Object {
+        "id": 1,
+        "name": "Velcom",
+      },
+    ]
+  }
+  title="Test App"
+>
+  <div
+    className="company_wrapper"
+  >
+    <h1
+      className="company_title"
+    >
+      Test App
+    </h1>
+    <CompanyName
+      companies={
+        Array [
+          Object {
+            "id": 1,
+            "name": "Velcom",
+          },
+        ]
+      }
+    >
+      <div
+        className="name_block"
+      >
+        <CompanyNameButton
+          activeCompanyId={
+            Object {
+              "id": 1,
+              "name": "Velcom",
+            }
+          }
+          item={
+            Object {
+              "id": 1,
+              "name": "Velcom",
+            }
+          }
+          key="1"
+        >
+          <button
+            className="name_btn active"
+            key="1"
+            onClick={[Function]}
+            type="button"
+          >
+            Velcom
+          </button>
+        </CompanyNameButton>
+        <p
+          className="name"
+        >
+          Компания: 
+          Velcom
+        </p>
+      </div>
+    </CompanyName>
+    <hr />
+    <FilterStatusButtons
+      filter="all"
+    >
+      <div
+        className="filter_block"
+      >
+        <button
+          className="clients_btn active"
+          data-name="all"
+          key="all"
+          onClick={[Function]}
+          type="button"
+        >
+          Все
+        </button>
+        <button
+          className="clients_btn"
+          data-name="active"
+          key="active"
+          onClick={[Function]}
+          type="button"
+        >
+          Активные
+        </button>
+        <button
+          className="clients_btn"
+          data-name="blocked"
+          key="blocked"
+          onClick={[Function]}
+          type="button"
+        >
+          Заблокированые
+        </button>
+      </div>
+    </FilterStatusButtons>
+    <hr />
+    <MobileClients
+      clients={Array []}
+      isShowAddedForm={false}
+    >
+      <div
+        className="clients_wrapper"
+      >
+        <div
+          className="clients_title"
+        >
+          <div
+            className="th"
+          >
+            Фамилия
+          </div>
+          <div
+            className="th"
+          >
+            Имя
+          </div>
+          <div
+            className="th"
+          >
+            Отчество
+          </div>
+          <div
+            className="th"
+          >
+            Баланс
+          </div>
+          <div
+            className="th"
+          >
+            Статус
+          </div>
+          <div
+            className="th button_th"
+          >
+            Редактировать
+          </div>
+          <div
+            className="th button_th"
+          >
+            Удалить
+          </div>
+        </div>
+      </div>
+    </MobileClients>
+    <hr />
+    <AddedClientButton>
+      <button
+        className="clients_btn add_btn"
+        onClick={[Function]}
+        type="button"
+      >
+        Добавить клиента
+      </button>
+    </AddedClientButton>
+  </div>
+</App>
+`;
+
+exports[`тестирование добавление клиента end-to-end 2`] = `
+<App
+  clients={Array []}
+  companies={
+    Array [
+      Object {
+        "id": 1,
+        "name": "Velcom",
+      },
+    ]
+  }
+  title="Test App"
+>
+  <div
+    className="company_wrapper"
+  >
+    <h1
+      className="company_title"
+    >
+      Test App
+    </h1>
+    <CompanyName
+      companies={
+        Array [
+          Object {
+            "id": 1,
+            "name": "Velcom",
+          },
+        ]
+      }
+    >
+      <div
+        className="name_block"
+      >
+        <CompanyNameButton
+          activeCompanyId={
+            Object {
+              "id": 1,
+              "name": "Velcom",
+            }
+          }
+          item={
+            Object {
+              "id": 1,
+              "name": "Velcom",
+            }
+          }
+          key="1"
+        >
+          <button
+            className="name_btn active"
+            key="1"
+            onClick={[Function]}
+            type="button"
+          >
+            Velcom
+          </button>
+        </CompanyNameButton>
+        <p
+          className="name"
+        >
+          Компания: 
+          Velcom
+        </p>
+      </div>
+    </CompanyName>
+    <hr />
+    <FilterStatusButtons
+      filter="all"
+    >
+      <div
+        className="filter_block"
+      >
+        <button
+          className="clients_btn active"
+          data-name="all"
+          key="all"
+          onClick={[Function]}
+          type="button"
+        >
+          Все
+        </button>
+        <button
+          className="clients_btn"
+          data-name="active"
+          key="active"
+          onClick={[Function]}
+          type="button"
+        >
+          Активные
+        </button>
+        <button
+          className="clients_btn"
+          data-name="blocked"
+          key="blocked"
+          onClick={[Function]}
+          type="button"
+        >
+          Заблокированые
+        </button>
+      </div>
+    </FilterStatusButtons>
+    <hr />
+    <MobileClients
+      clients={Array []}
+      isShowAddedForm={true}
+    >
+      <div
+        className="clients_wrapper"
+      >
+        <div
+          className="clients_title"
+        >
+          <div
+            className="th"
+          >
+            Фамилия
+          </div>
+          <div
+            className="th"
+          >
+            Имя
+          </div>
+          <div
+            className="th"
+          >
+            Отчество
+          </div>
+          <div
+            className="th"
+          >
+            Баланс
+          </div>
+          <div
+            className="th"
+          >
+            Статус
+          </div>
+          <div
+            className="th button_th"
+          >
+            Редактировать
+          </div>
+          <div
+            className="th button_th"
+          >
+            Удалить
+          </div>
+        </div>
+      </div>
+    </MobileClients>
+    <hr />
+    <AddedClientButton>
+      <button
+        className="clients_btn add_btn"
+        onClick={[Function]}
+        type="button"
+      >
+        Добавить клиента
+      </button>
+    </AddedClientButton>
+    <AddClientItem>
+      <form
+        className="add_client_form"
+        onSubmit={[Function]}
+      >
+        <ul
+          className="list"
+        >
+          <li
+            className="list_item"
+          >
+            <label
+              htmlFor="firstName"
+            >
+              <input
+                className="form_input"
+                defaultValue=""
+                id="firstName"
+                name="firstName"
+                onBlur={[Function]}
+                type="text"
+              />
+            </label>
+          </li>
+          <li
+            className="list_item"
+          >
+            <label
+              htmlFor="secondName"
+            >
+              <input
+                className="form_input"
+                defaultValue=""
+                id="secondName"
+                name="secondName"
+                onBlur={[Function]}
+                type="text"
+              />
+            </label>
+          </li>
+          <li
+            className="list_item"
+          >
+            <label
+              htmlFor="patronymic"
+            >
+              <input
+                className="form_input"
+                defaultValue=""
+                id="patronymic"
+                name="patronymic"
+                onBlur={[Function]}
+                type="text"
+              />
+            </label>
+          </li>
+          <li
+            className="list_item"
+          >
+            <label
+              htmlFor="balance"
+            >
+              <input
+                className="form_input"
+                defaultValue=""
+                id="balance"
+                name="balance"
+                onBlur={[Function]}
+                type="number"
+              />
+            </label>
+          </li>
+        </ul>
+        <div
+          className="form_btn_block"
+        >
+          <button
+            className="clients_btn save_btn"
+            type="submit"
+          >
+            save
+          </button>
+          <button
+            className="clients_btn cancel_btn"
+            onClick={[Function]}
+            type="button"
+          >
+            cancel
+          </button>
+        </div>
+      </form>
+    </AddClientItem>
+  </div>
+</App>
+`;
+
+exports[`тестирование добавление клиента end-to-end 3`] = `
+<App
+  clients={Array []}
+  companies={
+    Array [
+      Object {
+        "id": 1,
+        "name": "Velcom",
+      },
+    ]
+  }
+  title="Test App"
+>
+  <div
+    className="company_wrapper"
+  >
+    <h1
+      className="company_title"
+    >
+      Test App
+    </h1>
+    <CompanyName
+      companies={
+        Array [
+          Object {
+            "id": 1,
+            "name": "Velcom",
+          },
+        ]
+      }
+    >
+      <div
+        className="name_block"
+      >
+        <CompanyNameButton
+          activeCompanyId={
+            Object {
+              "id": 1,
+              "name": "Velcom",
+            }
+          }
+          item={
+            Object {
+              "id": 1,
+              "name": "Velcom",
+            }
+          }
+          key="1"
+        >
+          <button
+            className="name_btn active"
+            key="1"
+            onClick={[Function]}
+            type="button"
+          >
+            Velcom
+          </button>
+        </CompanyNameButton>
+        <p
+          className="name"
+        >
+          Компания: 
+          Velcom
+        </p>
+      </div>
+    </CompanyName>
+    <hr />
+    <FilterStatusButtons
+      filter="all"
+    >
+      <div
+        className="filter_block"
+      >
+        <button
+          className="clients_btn active"
+          data-name="all"
+          key="all"
+          onClick={[Function]}
+          type="button"
+        >
+          Все
+        </button>
+        <button
+          className="clients_btn"
+          data-name="active"
+          key="active"
+          onClick={[Function]}
+          type="button"
+        >
+          Активные
+        </button>
+        <button
+          className="clients_btn"
+          data-name="blocked"
+          key="blocked"
+          onClick={[Function]}
+          type="button"
+        >
+          Заблокированые
+        </button>
+      </div>
+    </FilterStatusButtons>
+    <hr />
+    <MobileClients
+      clients={
+        Array [
+          Object {
+            "balance": 1000,
+            "firstName": "alex",
+            "id": 1,
+            "patronymic": "alex",
+            "secondName": "alex",
+            "status": true,
+          },
+        ]
+      }
+      isShowAddedForm={false}
+    >
+      <div
+        className="clients_wrapper"
+      >
+        <div
+          className="clients_title"
+        >
+          <div
+            className="th"
+          >
+            Фамилия
+          </div>
+          <div
+            className="th"
+          >
+            Имя
+          </div>
+          <div
+            className="th"
+          >
+            Отчество
+          </div>
+          <div
+            className="th"
+          >
+            Баланс
+          </div>
+          <div
+            className="th"
+          >
+            Статус
+          </div>
+          <div
+            className="th button_th"
+          >
+            Редактировать
+          </div>
+          <div
+            className="th button_th"
+          >
+            Удалить
+          </div>
+        </div>
+        <ClientItem
+          isShowAddedForm={false}
+          item={
+            Object {
+              "balance": 1000,
+              "firstName": "alex",
+              "id": 1,
+              "patronymic": "alex",
+              "secondName": "alex",
+              "status": true,
+            }
+          }
+          key="1"
+        >
+          <div
+            className="client_block"
+          >
+            <div
+              className="td firstName"
+            >
+              alex
+            </div>
+            <div
+              className="td secondName"
+            >
+              alex
+            </div>
+            <div
+              className="td patronymic"
+            >
+              alex
+            </div>
+            <div
+              className="td balance"
+            >
+              1000
+            </div>
+            <div
+              className="td status active"
+            >
+              active
+            </div>
+            <div
+              className="td button_td"
+            >
+              <button
+                className="clients_btn edit_btn"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Редактировать
+              </button>
+            </div>
+            <div
+              className="td button_td"
+            >
+              <button
+                className="clients_btn delete_btn"
+                disabled={false}
+                onClick={[Function]}
+                type="button"
+              >
+                Удалить
+              </button>
+            </div>
+          </div>
+        </ClientItem>
+      </div>
+    </MobileClients>
+    <hr />
+    <AddedClientButton>
+      <button
+        className="clients_btn add_btn"
+        onClick={[Function]}
+        type="button"
+      >
+        Добавить клиента
+      </button>
+    </AddedClientButton>
+  </div>
+</App>
+`;

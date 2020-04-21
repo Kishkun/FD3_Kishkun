@@ -25,6 +25,7 @@ class FilterStatusButtons extends React.PureComponent{
             return(
                 <button
                     key={item.name}
+                    data-name={item.name}
                     type='button'
                     className={isActive ? 'clients_btn active' : 'clients_btn'}
                     onClick={() => myEvents.emit('onFilterChange', item.name)}

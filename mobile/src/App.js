@@ -40,6 +40,7 @@ class App extends React.PureComponent {
             editingItem: null,
             isShowAddedForm: false
         };
+        this.minID = this.props.clients.length;
         myEvents.on('onFilterChange', this.onFilterChange.bind(this));
         myEvents.on('onDeleteItem', this.onDeleteItem.bind(this));
         myEvents.on('onEditItem', this.onEditItem.bind(this));
@@ -49,11 +50,11 @@ class App extends React.PureComponent {
         myEvents.on('onAddItem', this.onAddItem.bind(this));
     }
 
-    minID = 5;
+    minID = 1;
 
-    createItem = (item) => {
+    createId = (item) => {
         return {
-            id: this.minID++,
+            id: ++this.minID,
             ...item
         };
     };
@@ -106,7 +107,7 @@ class App extends React.PureComponent {
     };
 
     onAddItem = (item) => {
-        let newItem = this.createItem(item);
+        let newItem = this.createId(item);
         let newList = [...this.state.clients, newItem];
         this.setState({
             clients: newList,

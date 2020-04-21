@@ -21,7 +21,7 @@ class EditClientItem extends React.PureComponent {
         super(props);
         this.state = {
             inputs: {
-                firstName: this.props.editingItem.firstName,
+                firstName: this.props.editingItem.a,
                 secondName: this.props.editingItem.secondName,
                 patronymic: this.props.editingItem.patronymic,
                 balance: this.props.editingItem.balance,

@@ -1,18 +1,13 @@
 ﻿import React from 'react';
-import renderer from 'react-test-renderer';
 import AddedClientButton from '../src/components/buttons/AddedClientButton';
 import myEvents from '../src/events';
+import {shallow} from 'enzyme';
 
 test('работа AddedClientButton', () => {
+    const wrapper = shallow(<AddedClientButton/>);
+    expect(wrapper).toMatchSnapshot();
 
-    const component = renderer.create(
-        <AddedClientButton />
-    );
-
-    let componentTree=component.toJSON();
-    expect(componentTree).toMatchSnapshot();
-
-    const buttonElem = component.root.find( el => el.type === 'button');
+    const buttonElem = wrapper.find('.add_btn');
 
     let eventTriggered = false;
 
@@ -20,7 +15,8 @@ test('работа AddedClientButton', () => {
         eventTriggered = true;
     });
 
-    buttonElem.props.onClick();
+    buttonElem.simulate('click');
 
     expect(eventTriggered).toBeTruthy();
+
 });
