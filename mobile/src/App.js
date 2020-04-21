@@ -127,8 +127,7 @@ class App extends React.PureComponent {
                 <FilterStatusButtons filter={filter} />
                 <hr/>
                 <MobileClients
-                    clients={filtered}
-                    isShowAddedForm={this.state.isShowAddedForm} />
+                    clients={filtered}/>
                 <hr/>
                 <AddedClientButton/>
                 {this.state.isShowAddedForm ? <AddClientItem/> : false}

@@ -23,8 +23,8 @@ class ClientItem extends React.PureComponent {
     }
 
     render() {
-        console.log('Client Item render');
         let {id, firstName, secondName, patronymic, balance, status} = this.props.item;
+        console.log(`Client ${id} Item render`);
         return (
             <div className='client_block'>
                 <div className='td firstName'>{firstName}</div>
@@ -36,7 +36,6 @@ class ClientItem extends React.PureComponent {
                 <div className='td button_td'>
                     <button
                         type='button'
-                        disabled={this.props.isShowAddedForm}
                         className={!this.props.isShowAddedForm ? 'clients_btn edit_btn' : 'clients_btn edit_btn disabled'}
                         onClick={() => myEvents.emit('onEditItem', id)}
                     >Редактировать</button>
@@ -44,7 +43,6 @@ class ClientItem extends React.PureComponent {
                 <div className='td button_td'>
                     <button
                         type='button'
-                        disabled={this.props.isShowAddedForm}
                         className={!this.props.isShowAddedForm ? 'clients_btn delete_btn' : 'clients_btn delete_btn disabled'}
                         onClick={() => myEvents.emit('onDeleteItem', id)}
                     >Удалить</button>

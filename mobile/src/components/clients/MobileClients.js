@@ -14,8 +14,7 @@ class MobileClients extends React.PureComponent {
                 balance: PropTypes.number.isRequired,
                 status: PropTypes.bool.isRequired
             })
-        ),
-        isShowAddedForm: PropTypes.bool.isRequired
+        )
     };
 
     constructor(props) {
@@ -26,7 +25,7 @@ class MobileClients extends React.PureComponent {
     render() {
         console.log('MobileClients render');
         let mobileClients = this.props.clients.map(item =>
-            <ClientItem key={item.id} item={item} isShowAddedForm={this.props.isShowAddedForm} />);
+            <ClientItem key={item.id} item={item} />);
         return (
             <div className='clients_wrapper'>
                 <div className='clients_title'>
