@@ -1,10 +1,17 @@
 import * as R from "ramda";
+import {equals} from "ramda";
 
 export const getPhoneById = (state, id) => {
     return R.prop(id, state.phones)   //return state.phones[id]
 };
 
-export const getPhones = (state) => {
+export const getActiveCategoryId = (ownProps) => {
+    // ищет конкретно id по цепочку внутри
+    return R.path(["match", "params", "id"], ownProps);
+};
+
+export const getPhones = (state, ownProps) => {
+    const activeCategoryId = getActiveCategoryId(ownProps);
     const applySearch = (item) => {
         return(
             R.contains(
@@ -15,8 +22,18 @@ export const getPhones = (state) => {
             )
         )
     };
+    const applyCategory = (item) => {
+      return(
+          R.equals(
+              activeCategoryId,
+              R.prop("categoryId", item)
+          )
+      )
+    };
     const phones = R.compose(
         R.filter(applySearch),
+        // если первая функция true, тогда выполняется вторая
+        R.when(R.always(activeCategoryId), R.filter(applyCategory)),
         R.map(id => getPhoneById(state, id))
     )(state.phonesPage.ids);
 
@@ -44,4 +61,9 @@ export const getTotalBasketPrice = (state) => {
     )(state.basket);
 
     return totalPrice;
+};
+
+export const getCategories = (state) => {
+    // возввращаем все значения категорий
+    return R.values(state.categories);
 };
