@@ -83,7 +83,7 @@ class Phone extends React.Component {
         const {phone, addPhoneToBasket} = this.props;
 
         return (
-            <div>
+            <div className="phone-sidebar">
                 <p className="lead">Quick shop</p>
                 <BasketCart/>
                 <div className="form-group">
