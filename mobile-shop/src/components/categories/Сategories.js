@@ -11,7 +11,9 @@ import {
 } from "../../selectors/selectors";
 import * as R from "ramda";
 
-const Categories = ({categories, activeCategoryId}) => {
+const Categories = (props) => {
+    const {categories, activeCategoryId} = props;
+
     const renderCategories = (item) => {
         const linkClass = classNames({
             "list-group-item": true,

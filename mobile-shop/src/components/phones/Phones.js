@@ -31,7 +31,11 @@ class Phones extends React.Component {
                         alt={phone.name}
                     />
                     <div className="caption">
-                        <h5 className="float-right">${phone.price}</h5>
+                        {
+                            phone.price ?
+                                <h5 className="float-right">${phone.price}</h5> :
+                                <h6 className="float-right">discontinued</h6>
+                        }
                         <h5>
                             <Link to={`/phones/${phone.id}`}>
                                 {phone.name}
@@ -39,12 +43,21 @@ class Phones extends React.Component {
                         </h5>
                         <p>{showDescription}</p>
                         <p className="itemButton">
-                            <button
-                                className="btn btn-primary"
-                                onClick={() => addPhoneToBasket(phone.id)}
-                            >
-                                Buy now!
-                            </button>
+                            {
+                                phone.price ?
+                                    <button
+                                        className="btn btn-primary"
+                                        onClick={() => addPhoneToBasket(phone.id)}
+                                    >
+                                        Buy now!
+                                    </button> :
+                                    <button
+                                        className="btn btn-danger"
+                                        disabled
+                                    >
+                                        Buy not!
+                                    </button>
+                            }
                             <Link
                                 to={`/phones/${phone.id}`}
                                 className="btn btn-default"

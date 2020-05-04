@@ -1,0 +1,823 @@
+{
+  "phones":[
+    {
+      "id": "1",
+      "categoryId": "1",
+      "name": "Apple XR",
+      "description":
+      "The Apple iPhone XR is a smartphone that was tested with the iOS 12.0. 1 operating system. This model weighs 6.9 ounces, has a 6.1 inch touch screen display, 12-megapixel main camera, and 7-megapixel selfie camera. It comes with 3GB of RAM.",
+      "price": 823,
+      "image": "/uploads/apple-iphone-xr-new.jpg",
+      "cpu": "A12 Bionic chip",
+      "camera": "12MP Wide camera",
+      "size": "150.9 x 75.7 x 8.3 mm (5.94 x 2.98 x 0.33 in)",
+      "weight": "194 g (6.84 oz)",
+      "display": "6.1-inch",
+      "battery": "Non-removable Li-Ion 2942 mAh battery (11.16 Wh)",
+      "memory": "64GB, 128GB and RAM 4 GB"
+    },
+    {
+      "id": "2",
+      "categoryId": "1",
+      "name": "Apple 11 Pro Max",
+      "description":
+      "Apple iPhone 11 Max smartphone runs on iOS v13.0 operating system. The phone is powered by Hexa Core (2.49 GHz, Dual core, Vortex + 1.52 GHz, Quad core, Tempest) processor. It runs on the Apple A12 Bionic Chipset. It has 4 GB RAM and 64 GB internal storage",
+      "price": 1300,
+      "image": "/uploads/apple-iphone-11-pro.jpg",
+      "cpu": "Hexa-core (2x2.65 GHz Lightning + 4x1.8 GHz Thunder) Apple A13 Bionic (7 nm+)",
+      "camera": "12MP (4000 x 3000 Pixels)",
+      "size": "158 x 77.8 x 8.1mm",
+      "weight": "226 g (7.97 oz)",
+      "display": "Super Retina XDR OLED",
+      "battery": "4100 mAh",
+      "memory": "256GB, 512GB and RAM 4 GB"
+    },
+    {
+      "id": "3",
+      "categoryId": "4",
+      "name": "Lenovo A6000",
+      "description":
+      "India\"s cheapest 4G smartphone, Lenovo A6000 has a 5-inch HD display, 1.2GHz quad-core Snapdragon 410 processor, 1GB RAM, 8MP rear camera, 2MP front camera, dual speakers with Dolby Digital Plus technology and 2,300mAh battery.",
+      "price": 764,
+      "image": "/uploads/lenovo-a6000.jpg",
+      "cpu": "1.3GHz Apple A6",
+      "camera": "8mp (3264x2448)",
+      "size": "124.4mm x 59.2mm x 8.97mm",
+      "weight": "132 grams (4.7 ounces) with battery",
+      "display": "4.0 326 pixel density",
+      "battery": "1480 mAh",
+      "memory": "16GB, 32GB and RAM 1 GB"
+    },
+    {
+      "id": "4",
+      "categoryId": "5",
+      "name": "Nokia Lumia",
+      "description":
+      "Nokia Lumia 1520. Last Updated On: Place : Chennai Delhi Kolkata Mumbai price (USD) $1044.42 description Nokia Lumia 1520 is an Windows Phone 8 Smartphone with 6 Inch 1080p ClearBlack IPS LCD display, 20 Megapixel PureView Camera. It comes with 2.2 GHz Snapdragon Qualcomm 800 Quad Core Processor and 2GB RAM.",
+      "image": "/uploads/nokia-lumia-520.jpg",
+      "cpu": "1.3GHz Apple A6",
+      "camera": "8mp (3264x2448)",
+      "size": "124.4mm x 59.2mm x 8.97mm",
+      "weight": "132 grams (4.7 ounces) with battery",
+      "display": "4.0 326 pixel density",
+      "battery": "1480 mAh",
+      "memory": "16GB, 32GB and RAM 1 GB"
+    },
+    {
+      "id": "5",
+      "categoryId": "3",
+      "name": "HTC One",
+      "description":
+      "The HTC One (codenamed and retroactively called M7) is a touchscreen-based Android smartphone designed, developed, and manufactured by HTC. The smartphone was unveiled on 19 February 2013 at press events in New York City and London and is HTC\"s seventh flagship smartphone.",
+      "price": 674,
+      "image": "/uploads/htc-one.jpg",
+      "cpu": "1.3GHz Apple A6",
+      "camera": "8mp (3264x2448)",
+      "size": "124.4mm x 59.2mm x 8.97mm",
+      "weight": "132 grams (4.7 ounces) with battery",
+      "display": "4.0 326 pixel density",
+      "battery": "1480 mAh",
+      "memory": "16GB, 32GB and RAM 1 GB"
+    },
+    {
+      "id": "6",
+      "categoryId": "2",
+      "name": "Samsung Galaxy S20",
+      "description":
+      "Samsung Galaxy S20 is a line of smartphones designed, developed, marketed, and manufactured by Samsung Electronics as part of its Galaxy S series.[1][2] They collectively serve as the successor to the Galaxy S10 and were unveiled at Samsung\"s Galaxy Unpacked event on 11 February 2020",
+      "price": 1300,
+      "image": "/uploads/galaxy-s20.jpg",
+      "cpu": "Octa-core (2x2.73 GHz Mongoose M5 & 2x2.50 GHz Cortex-A76 & 4x2.0 GHz Cortex-A55)",
+      "camera": "12 MP, f/1.8, 26mm (wide), 1/1.76, 1.8µm, Dual Pixel PDAF, OIS",
+      "size": "151.7 x 69.1 x 7.9mm",
+      "weight": "163 g (5.75 oz)",
+      "display": "4.0 326 pixel density",
+      "battery": "Non-removable Li-Po 4000 mAh battery",
+      "memory": "64GB, 256GB and RAM 8 GB"
+    },
+    {
+      "id": "7",
+      "categoryId": "2",
+      "name": "Samsung A51",
+      "description":
+      "The Samsung Galaxy A51 is an Android smartphone manufactured by Samsung Electronics as part of its A series. It was announced and released in December 2019. The phone has a Super AMOLED FHD+ 6.5\" display, a 48 MP wide, 12 MP ultrawide, 5 MP depth, and 5 MP macro camera, a 4000 mAh battery, and an ultrasonic in screen fingerprint sensor",
+      "price": 200,
+      "image": "/uploads/galaxy-a51.jpg",
+      "cpu": "ARM Cortex-A73 2300 МГц + Cortex-A53 1700 GHz",
+      "camera": "48 Мп + 12 Мп + 5 Мп + 5 Мп",
+      "size": "158.5 x 73.6 x 7.9mm",
+      "weight": "172 g",
+      "display": "6.5 x 1080x2400",
+      "battery": "Non-removable Li-Po 4000 mAh battery",
+      "memory": "64GB, 256GB and RAM 6 GB"
+    },
+    {
+      "id": "8",
+      "categoryId": "2",
+      "name": "Samsung S10e",
+      "description":
+      "Samsung Galaxy S10 is a line of Android-based smartphones manufactured, released and marketed by Samsung Electronics as part of the Samsung Galaxy S series. The Galaxy S10 series is a celebratory series of the 10th anniversary of the Samsung Galaxy S flagship line, its top line of phones next to the Note models. Unveiled during the \"Samsung Galaxy Unpacked 2019\" press event held on February 20, 2019, the devices started shipping in certain regions such as Australia and the United States on March 6, 2019, then worldwide on March 8, 2019.[5] It is the tenth generation of Samsung's Galaxy S series of smartphones.",
+      "price": 345,
+      "image": "/uploads/galaxy-s10e.jpg",
+      "cpu": "Qualcomm SM8150 Snapdragon 855 (7 nm)",
+      "camera": "12 MP, f/1.5-2.4, 26mm (wide), 1/2.55",
+      "size": "142.2 x 69.9 x 7.9 mm",
+      "weight": "150 g",
+      "display": "Dynamic AMOLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3100 mAh battery",
+      "memory": "128GB 6GB RAM, 256GB 8GB RAM"
+    },
+    {
+      "id": "9",
+      "categoryId": "2",
+      "name": "Samsung A10",
+      "description":
+      "The Samsung Galaxy A10 is an Android smartphone developed by Samsung Electronics. It was released in March 2019. It comes with Android 9 (Pie) with One UI, 32GB internal storage, and a 3400 mAh battery.",
+      "price": 189,
+      "image": "/uploads/galaxy-a10.jpg",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A73 & 6x1.35 GHz Cortex-A53)",
+      "camera": "13 MP, f/1.9, 28mm (wide), AF",
+      "size": "155.6 x 75.6 x 7.9 mm (6.13 x 2.98 x 0.31 in)",
+      "weight": "168 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3400 mAh battery",
+      "memory": "32GB 2GB RAM, 32GB 4GB RAM"
+    },
+    {
+      "id": "10",
+      "categoryId": "2",
+      "name": "Samsung A40",
+      "description":
+      "The Samsung Galaxy A40 is a mid-range Android smartphone developed and manufactured by Samsung Electronics. Running on the Android 9.0 \"Pie\" software, the device was announced on March 19, 2019.[4] It was released a month later in Europe on April 10, 2019.",
+      "price": 230,
+      "image": "/uploads/galaxy-a40.jpg",
+      "cpu": "Octa-core (2x1.77 GHz Cortex-A73 & 6x1.59 GHz Cortex-A53)",
+      "camera": "16 MP, f/1.7, 26mm (wide), PDAF",
+      "size": "144.4 x 69.2 x 7.9 mm (5.69 x 2.72 x 0.31 in)",
+      "weight": "140 g",
+      "display": "Super AMOLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 3100 mAh battery",
+      "memory": "64GB 4GB RAM"
+    },
+    {
+      "id": "11",
+      "categoryId": "2",
+      "name": "Samsung S20+",
+      "description":
+      "The S20 line consists of flagship Galaxy S20 and Galaxy S20+ models differentiated primarily by screen size, as well as a larger camera-focused model, the Galaxy S20 Ultra.[5] Key upgrades over the previous model, in addition to improved specifications, include a display with a 120 Hz refresh rate, an improved camera system supporting 8K video recording and a super-resolution zoom of 30–100×, depending on the model.",
+      "price": 860,
+      "image": "/uploads/galaxy-s20-plus.jpg",
+      "cpu": "Octa-core (2x2.73 GHz Mongoose M5 & 2x2.50 GHz Cortex-A76 & 4x2.0 GHz Cortex-A55) - Global",
+      "camera": "64 MP, f/2.0, 29mm (telephoto), 1/1.72\", 0.8µm, PDAF, OIS, 1.1x optical zoom, 3x hybrid zoom",
+      "size": "161.9 x 73.7 x 7.8 mm (6.37 x 2.90 x 0.31 in)",
+      "weight": "186 g",
+      "display": "Dynamic AMOLED 2X capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4500 mAh battery",
+      "memory": "128GB 8GB RAM"
+    },
+    {
+      "id": "12",
+      "categoryId": "2",
+      "name": "Samsung A30",
+      "description":
+      "The Samsung Galaxy A30 is a mid-range Android phablet developed, manufactured and marketed by Samsung Electronics. Running on the Android 9.0 \"Pie\" software, the A30 was unveiled on February 25, 2019 alongside the Samsung Galaxy A10[11] and Samsung Galaxy A50[10] at the Mobile World Congress.[12] It was released a month later on March 2, 2019.",
+      "price": 220,
+      "image": "/uploads/galaxy-a30.jpg",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A73 & 6x1.6 GHz Cortex-A53)",
+      "camera": "16 MP, f/1.7, 27mm (wide), PDAF",
+      "size": "158.5 x 74.7 x 7.7 mm (6.24 x 2.94 x 0.30 in)",
+      "weight": "165 g",
+      "display": "Super AMOLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4000 mAh battery",
+      "memory": "32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    {
+      "id": "13",
+      "categoryId": "2",
+      "name": "Samsung A70",
+      "description":
+      "The Samsung Galaxy A70 and A70s are a series of Android phablets manufactured by Samsung Electronics as part of its fifth-generation Galaxy A series lineup. The phones come with Android 9 (Pie) with Samsung's proprietary One UI skin, 128 GB of internal storage, and a 4500 mAh battery.[1] The A70 was unveiled in South Korea on March 26, 2019.",
+      "price": 315,
+      "image": "/uploads/galaxy-a70.jpg",
+      "cpu": "Octa-core (2x2.0 GHz Kryo 460 Gold & 6x1.7 GHz Kryo 460 Silver)",
+      "camera": "32 MP, f/1.7, 26mm (wide), 1/2.8\", 0.8µm, PDAF",
+      "size": "164.3 x 76.7 x 7.9 mm (6.47 x 3.02 x 0.31 in)",
+      "weight": "183 g",
+      "display": "Super AMOLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4500 mAh battery",
+      "memory": "128GB 6GB RAM, 128GB 8GB RAM"
+    },
+    {
+      "id": "14",
+      "categoryId": "2",
+      "name": "Samsung S8",
+      "description":
+      "The Samsung Galaxy S8, Samsung Galaxy S8+ and Samsung Galaxy S8 Active are Android-based smartphones (with the S8+ being a phablet) produced by Samsung Electronics as the eighth generation of the Samsung Galaxy S series. The S8 and S8+ were unveiled on 29 March 2017 and directly succeeded the Samsung Galaxy S7 and S7 edge, with a North American release on 21 April 2017 and international rollout throughout April and May. The S8 Active was announced on 8 August 2017 and is exclusive to certain U.S. cellular carriers.",
+      "price": 240,
+      "image": "/uploads/galaxy-s8.jpg",
+      "cpu": "Qualcomm MSM8998 Snapdragon 835 (10 nm)",
+      "camera": "12 MP, f/1.7, 26mm (wide), 1/2.55\", 1.4µm, dual pixel PDAF, OIS",
+      "size": "148.9 x 68.1 x 8 mm (5.86 x 2.68 x 0.31 in)",
+      "weight": "155 g",
+      "display": "Super AMOLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3000 mAh battery (11.55 Wh)",
+      "memory": "64GB 4GB RAM"
+    },
+    {
+      "id": "15",
+      "categoryId": "2",
+      "name": "Samsung NOTE 10",
+      "description":
+      "The Samsung Galaxy Note 10 (stylized as Samsung Galaxy Note10) is a line of Android-based phablets designed, developed, produced, and marketed by Samsung Electronics as part of the Samsung Galaxy Note series. They were unveiled on 7 August 2019, as the successors to the Samsung Galaxy Note 9.[2] Details about the phablets were widely leaked in the months leading up to the phablets' announcement.",
+      "price": 500,
+      "image": "/uploads/galaxy-note10.jpg",
+      "cpu": "Octa-core (2x2.73 GHz Mongoose M4 & 2x2.4 GHz Cortex-A75 & 4x1.9 GHz Cortex-A55) - EMEA/LATAM",
+      "camera": "12 MP, f/1.5-2.4, 27mm (wide), 1/2.55\", 1.4µm, Dual Pixel PDAF, OIS",
+      "size": "151 x 71.8 x 7.9 mm (5.94 x 2.83 x 0.31 in)",
+      "weight": "168 g",
+      "display": "Dynamic AMOLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3500 mAh battery",
+      "memory": "256GB 8GB RAM"
+    },
+    {
+      "id": "16",
+      "categoryId": "3",
+      "name": "HTC Wildfire R70",
+      "description":
+      "HTC Wildfire R70 is an upcoming smartphone by HTC. The phone is rumoured to come with a 6.53-inch touchscreen display with a resolution of 720x1560 pixels and an aspect ratio of 19.5:9. HTC Wildfire R70 is expected to be powered by an octa-core MediaTek Helio P23 (MT6763) processor and come with 2GB of RAM.",
+      "price": 165,
+      "image": "/uploads/htc-wildfire-r70.jpg",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53)",
+      "camera": "16 MP, f/1.7, (wide), 1.4µm, PDAF",
+      "size": "163.2 x 77.8 x 8.9 mm (6.43 x 3.06 x 0.35 in)",
+      "weight": "186 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4000 mAh battery",
+      "memory": "32GB 2GB RAM"
+    },
+    {
+      "id": "17",
+      "categoryId": "3",
+      "name": "HTC U19e",
+      "description":
+      "The phone comes with a 6.00-inch touchscreen display with a resolution of 1080x2160 pixels and an aspect ratio of 18:9. HTC U19e is powered by an octa-core Qualcomm Snapdragon 710 processor. It comes with 6GB of RAM. The HTC U19e runs Android 9 Pie and is powered by a 3930mAh battery.",
+      "price": 400,
+      "image": "/uploads/htc-u19e.jpg",
+      "cpu": "Octa-core (2x2.2 GHz Kryo 360 Gold & 6x1.7 GHz Kryo 360 Silver)",
+      "camera": "12 MP, f/1.8, 26mm (wide), PDAF",
+      "size": "156.6 x 75.9 x 8 mm (6.17 x 2.99 x 0.31 in)",
+      "weight": "180 g",
+      "display": "OLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3930 mAh battery",
+      "memory": "128GB 6GB RAM"
+    },
+    {
+      "id": "18",
+      "categoryId": "3",
+      "name": "HTC Desire 12s",
+      "description":
+      "The HTC Desire 12s dimension is 72.7 x 154.2 x 8.3 mm and it weighs 150 grams with battery. The smartphone is pack with two different variants of RAM and Internal storage, 3 GB, 4 GB, 800 MHz RAM with 32 GB, 64 GB internal storage respectively.",
+      "price": 170,
+      "image": "/uploads/htc-desire-12s.jpg",
+      "cpu": "Qualcomm MSM8940 Snapdragon 435 (28 nm)",
+      "camera": "13 MP, f/2.0, PDAF",
+      "size": "154.2 x 72.7 x 8.3 mm (6.07 x 2.86 x 0.33 in)",
+      "weight": "150 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3075 mAh battery",
+      "memory": "32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    {
+      "id": "19",
+      "categoryId": "3",
+      "name": "HTC U12 LIFE",
+      "description":
+      "The phone comes with a 6.00-inch display with a resolution of 1080x2160 pixels at a pixel density of 402 pixels per inch (ppi) and an aspect ratio of 18:9. HTC U12 Life is powered by a 1.8GHz octa-core Qualcomm Snapdragon 636 processor. It comes with 4GB of RAM.",
+      "price": 355,
+      "image": "/uploads/htc-u12-life.jpg",
+      "cpu": "Octa-core (4x1.8 GHz Kryo 260 Gold & 4x1.6 GHz Kryo 260 Silver)",
+      "camera": "16 MP, f/2.0, PDAF",
+      "size": "158.5 x 75.4 x 8.3 mm (6.24 x 2.97 x 0.33 in)",
+      "weight": "175 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3600 mAh battery",
+      "memory": "64GB 4GB RAM, 128GB 6GB RAM"
+    },
+    {
+      "id": "20",
+      "categoryId": "3",
+      "name": "HTC U11",
+      "description":
+      "The U11 Life is a T-Mobile exclusive smartphone that was unveiled by HTC along with the U11+ on the same day. It features a 5.2-inch display, IP67 certification for water and dust resistance, a 73 hour long battery life, and is also shipped with Android 8.0 Oreo.",
+      "price": 345,
+      "image": "/uploads/htc-u11.jpg",
+      "cpu": "Octa-core (4x2.45 GHz Kryo & 4x1.9 GHz Kryo)",
+      "camera": "12 MP, f/1.7, 1/2.55\", 1.4µm, dual pixel PDAF, 5-axis OIS",
+      "size": "153.9 x 75.9 x 7.9 mm (6.06 x 2.99 x 0.31 in)",
+      "weight": "169 g",
+      "display": "Super LCD5 capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3000 mAh battery",
+      "memory": "64GB 4GB RAM, 128GB 6GB RAM"
+    },
+    {
+      "id": "21",
+      "categoryId": "3",
+      "name": "HTC U Ultra",
+      "description":
+      "HTC's U Ultra is a big phone, with plenty of specs under its beautiful glass exterior. When it comes to what you expect from a high-end phone, you get it here: Snapdragon 821, 4GB of RAM, 64GB of storage, a 5.7-inch QHD display covered by Gorilla Glass 5 and a top-end camera with big pixels and a fast aperture.",
+      "price": 415,
+      "image": "/uploads/htc-u-ultra.jpg",
+      "cpu": "Quad-core (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)",
+      "camera": "12 MP, f/1.8, 26mm (wide), 1/2.3\", 1.55µm, PDAF, Laser AF, OIS",
+      "size": "162.4 x 79.8 x 8 mm (6.39 x 3.14 x 0.31 in)",
+      "weight": "170 g",
+      "display": "Super LCD5 capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3000 mAh battery",
+      "memory": "64GB 4GB RAM, 128GB 4GB RAM"
+    },
+    {
+      "id": "22",
+      "categoryId": "3",
+      "name": "HTC Desire 10 Pro",
+      "description":
+      "HTC Desire 10 Pro Summary The 5.5-inch full-HD display produces punchy colours and sharp text. The Dual-SIM phone support 4G with VoLTE and expandable memory using the second SIM slot. Under the hood, is an octa-core MediaTek Helio P10 SoC, 4GB of RAM and 64GB of storage.",
+      "price": 245,
+      "image": "/uploads/htc-desire-10-pro.jpg",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "camera": "20 MP, f/2.2, 28mm (wide), Laser AF",
+      "size": "156.5 x 76 x 7.9 mm (6.16 x 2.99 x 0.31 in)",
+      "weight": "165 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3000 mAh battery",
+      "memory": "64GB 4GB RAM"
+    },
+    {
+      "id": "23",
+      "categoryId": "3",
+      "name": "HTC 10 Evo",
+      "description":
+      "HTC 10 evo Summary The phone comes with a 5.50-inch touchscreen display with a resolution of 1440x2560 pixels. HTC 10 evo is powered by an octa-core Qualcomm Snapdragon 810 processor. It comes with 3GB of RAM. The HTC 10 evo runs Android 7.0 and is powered by a 3200mAh non-removable battery.",
+      "price": 180,
+      "image": "/uploads/htc-10-evo.jpg",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x2.0 GHz Cortex-A57)",
+      "camera": "16 MP, f/2.0, PDAF, OIS",
+      "size": "153.6 x 77.3 x 8.1 mm (6.05 x 3.04 x 0.32 in)",
+      "weight": "174 g",
+      "display": "Super LCD3 capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3200 mAh battery",
+      "memory": "32GB 3GB RAM, 64GB 3GB RAM"
+    },
+    {
+      "id": "24",
+      "categoryId": "3",
+      "name": "HTC One M9 Plus",
+      "description":
+      "HTC One M9 Plus runs Android 5.0. 2 Lollipop. The device features a 5.2-inch Quad-HD display with a pixel density of 534 PPI. It is powered by a 2.2 GHz octa-core MediaTek processor and 3GB RAM. It comes with a 20.7 MP + 2.1 MP rear camera with dual LED flash and a 4 MP front camera.",
+      "price": 225,
+      "image": "/uploads/htc-one-m9-plus.jpg",
+      "cpu": "Octa-core 2.2 GHz Cortex-A53",
+      "camera": "20 MP, f/2.2, 28mm (wide), 1/2.4\", 1.2µm",
+      "size": "151 x 72 x 9.6 mm (5.94 x 2.83 x 0.38 in)",
+      "weight": "168 g",
+      "display": "Super LCD3 capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 2840 mAh battery",
+      "memory": "32GB 3GB RAM"
+    },
+    {
+      "id": "25",
+      "categoryId": "4",
+      "name": "Lenovo K10 Note",
+      "description":
+      "Lenovo K10 Note Summary It has a 6.3-inch full-HD+ display, which produces good colours. There's a dewdrop notch and a notification LED hidden in the earpiece grille. The K10 Note is powered by a Qualcomm Snapdragon 710 SoC and comes with either 4GB or 6GB of RAM and 64GB or 128GB of storage.",
+      "price": 290,
+      "image": "/uploads/lenovo-z6-youth.jpg",
+      "cpu": "Octa-core (2x2.2 GHz Kryo 360 Gold & 6x1.7 GHz Kryo 360 Silver)",
+      "camera": "16 MP, f/1.8, PDAF",
+      "size": "156.6 x 74.3 x 7.9 mm (6.17 x 2.93 x 0.31 in)",
+      "weight": "164",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4050 mAh battery",
+      "memory": "64GB 4GB RAM, 128GB 6GB RAM"
+    },
+    {
+      "id": "26",
+      "categoryId": "4",
+      "name": "Lenovo K7",
+      "description":
+      "The phone is powered by Octa core, 2 GHz, Cortex A53 processor. It runs on the Qualcomm Snapdragon 625 MSM8953 Chipset. It has 4 GB RAM and 32 GB internal storage. Lenovo K7 Note smartphone has a IPS LCD display.",
+      "price": 200,
+      "image": "/uploads/lenovo-a7.jpg",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "camera": "13 MP, (wide), PDAF",
+      "size": "Unknown",
+      "weight": "Unknown",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 4000 mAh battery",
+      "memory": "eMMC 5.1"
+    },
+    {
+      "id": "27",
+      "categoryId": "4",
+      "name": "Lenovo Z6 Pro",
+      "description":
+      "Lenovo Z6 Pro Summary The phone comes with a 6.39-inch touchscreen display. Lenovo Z6 Pro is powered by an octa-core Qualcomm Snapdragon 855 processor. It comes with 6GB of RAM. The Lenovo Z6 Pro runs Android Pie and is powered by a 4000mAh battery.",
+      "price": 330,
+      "image": "/uploads/lenovo-z6-pro.jpg",
+      "cpu": "Octa-core (1x2.84 GHz Kryo 485 & 3x2.42 GHz Kryo 485 & 4x1.78 GHz Kryo 485)",
+      "camera": "48 MP, f/1.8, 28mm (wide), 1/2.0\", 0.8µm, PDAF",
+      "size": "157.5 x 74.6 x 8.7 mm (6.20 x 2.94 x 0.34 in)",
+      "weight": "185 g",
+      "display": "Super AMOLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4000 mAh battery",
+      "memory": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM, 512GB 12GB RAM"
+    },
+    {
+      "id": "28",
+      "categoryId": "4",
+      "name": "Lenovo A7000",
+      "description":
+      "Lenovo A7000 features a 5.5-inch 720p IPS display, is 7.9mm thick and weighs 140gm. The smartphone runs on a 1.5GHz MediaTek octa-core processor. It has an 8MP autofocus camera on the back and a 5MP front-facing camera.",
+      "image": "/uploads/lenovo-a7000.jpg",
+      "cpu": "Octa-core 1.5 GHz Cortex-A53",
+      "camera": "8 MP, f/2.2, AF",
+      "size": "152.6 x 76.2 x 8 mm (6.01 x 3.00 x 0.31 in)",
+      "weight": "140 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Removable Li-Po 2900 mAh battery",
+      "memory": "8GB 2GB RAM"
+    },
+    {
+      "id": "29",
+      "categoryId": "4",
+      "name": "Lenovo Tab 4 8",
+      "description":
+      "The tablet comes with a 8.00-inch display with a resolution of 800x1280 pixels. Lenovo Tab 4 8 is powered by a 1.4GHz quad-core Qualcomm Snapdragon 425 processor. It comes with 2GB of RAM. The Lenovo Tab 4 8 runs Android 7.0 and is powered by a 4850mAh non-removable battery.",
+      "price": 150,
+      "image": "/uploads/lenovo-tab-4-8.jpg",
+      "cpu": "Quad-core 1.4 GHz Cortex-A53",
+      "camera": "5 MP, AF",
+      "size": "211 x 124 x 8.2 mm (8.31 x 4.88 x 0.32 in)",
+      "weight": "310 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4850 mAh battery",
+      "memory": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    {
+      "id": "30",
+      "categoryId": "4",
+      "name": "Lenovo Vibe K4 Note",
+      "description":
+      "Lenovo Vibe K4 Note is a midrange Android smartphone launched by Lenovo Group Limited in January 2016. The phone features a 5.5 inch FHD display powered by MediaTek MT6753 SoC processor. It comes with two storage variants of 16 and 32 GB with 2 GB of RAM, for A7010 model and 3 GB of RAM for A7010a48 model.",
+      "price": 100,
+      "image": "/uploads/lenovo-vibe.jpg",
+      "cpu": "Octa-core 1.3 GHz Cortex-A53",
+      "camera": "13 MP, f/2.2, PDAF",
+      "size": "153.6 x 76.5 x 9.2 mm (6.05 x 3.01 x 0.36 in)",
+      "weight": "158 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 3300 mAh battery",
+      "memory": "8GB 2GB RAM, 16GB 2GB RAM, 16GB 3GB RAM (A7010 a48), 32GB 2GB RAM"
+    },
+    {
+      "id": "31",
+      "categoryId": "4",
+      "name": "Lenovo Z6",
+      "description":
+      "It features a 6.39-inch AMOLED display with DC dimming, HDR 10, and in-display fingerprint sensor. Lenovo Z6 Pro is powered by Snapdragon 855 SoC, paired with 8GB of RAM. Additionally, the new Lenovo phone packs a 32-megapixel selfie shooter on the front.",
+      "price": 330,
+      "image": "/uploads/lenovo-z6.jpg",
+      "cpu": "Octa-core (2x2.2 GHz Kryo 470 Gold & 6x1.8 GHz Kryo 470 Silver)",
+      "camera": "24 MP, f/1.8, (wide), 1/2.8\", 0.9µm, PDAF",
+      "size": "157 x 74.5 x 8 mm (6.18 x 2.93 x 0.31 in)",
+      "weight": "159 g",
+      "display": "Super AMOLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4000 mAh battery",
+      "memory": "64GB 6GB RAM, 128GB 6GB RAM, 128GB 8GB RAM"
+    },
+    {
+      "id": "32",
+      "categoryId": "4",
+      "name": "Lenovo K10 Plus",
+      "description":
+      "The phone comes with a 6.22-inch touchscreen display with a resolution of 720x1520 pixels and an aspect ratio of 19:9. Lenovo K10 Plus is powered by a 1.8GHz octa-core Qualcomm Snapdragon 632 processor. It comes with 4GB of RAM. The Lenovo K10 Plus supports proprietary fast charging.",
+      "price": 150,
+      "image": "/uploads/lenovo-k10-plus.jpg",
+      "cpu": "Octa-core (4x1.8 GHz Kryo 250 Gold & 4x1.8 GHz Kryo 250 Silver)",
+      "camera": "13 MP, f/2.0, (wide), 1/3.1\", 1.12µm, PDAF",
+      "size": "158.3 x 75.8 x 8.3 mm (6.23 x 2.98 x 0.33 in)",
+      "weight": "172 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4050 mAh battery",
+      "memory": "64GB 4GB RAM"
+    },
+    {
+      "id": "33",
+      "categoryId": "4",
+      "name": "Lenovo A1000",
+      "description":
+      "The phone comes with a 4.00-inch touchscreen display with a resolution of 480x800 pixels. Lenovo A1000 is powered by a 1.3GHz quad-core Spreadtrum SC7731 processor. It comes with 1GB of RAM. The Lenovo A1000 runs Android 5.0 and is powered by a 2000mAh removable battery.",
+      "image": "/uploads/lenovo-a1000.jpg",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "camera": "5 MP",
+      "size": "124.5 x 64 x 10.6 mm (4.90 x 2.52 x 0.42 in)",
+      "weight": "132 g",
+      "display": "TFT capacitive touchscreen",
+      "battery": "Removable Li-Po 2000 mAh battery",
+      "memory": "8GB 1GB RAM"
+    },
+    {
+      "id": "34",
+      "categoryId": "5",
+      "name": "Nokia 8.3 5G",
+      "description":
+      "Nokia 8.3 5G is HMD Global's first 5G smartphone and packs a very comprehensive list of 5G bands. It features a 64MP quad camera at the back with ZEISS optics, as well as a 24MP selfie camera (also with ZEISS optics) in a punch hole on the display. This is a big guy with its 6.81\" display, but there is a fairly big 4500mh battery with 18W fast charging to make top-ups fast.",
+      "price": 650,
+      "image": "/uploads/nokia-83-5g.jpg",
+      "cpu": "Octa-core (1x2.4 GHz Kryo 475 Prime & 1x2.2 GHz Kryo 475 Gold & 6x1.8 GHz Kryo 475 Silver)",
+      "camera": "64 MP, f/1.9, (wide), PDAF",
+      "size": "171.9 x 78.6 x 9 mm (6.77 x 3.09 x 0.35 in)",
+      "weight": "220 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4500 mAh battery",
+      "memory": "64GB 6GB RAM, 128GB 8GB RAM"
+    },
+    {
+      "id": "35",
+      "categoryId": "5",
+      "name": "Nokia 7.2",
+      "description":
+      "The phone comes with a 6.30-inch touchscreen display with a resolution of 1080x2340 pixels. Nokia 7.2 is powered by an octa-core Qualcomm Snapdragon 660 processor. It comes with 4GB of RAM. The Nokia 7.2 runs Android Android 9 Pie and is powered by a 3500mAh non-removable battery.",
+      "price": 324,
+      "image": "/uploads/nokia-72.jpg",
+      "cpu": "Octa-core (4x2.2 GHz Kryo 260 Gold & 4x1.8 GHz Kryo 260 Silver)",
+      "camera": "48 MP, f/1.8, (wide), 1/2.0\", 0.8µm, PDAF",
+      "size": "159.9 x 75.2 x 8.3 mm (6.30 x 2.96 x 0.33 in)",
+      "weight": "180 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 3500 mAh battery",
+      "memory": "64GB 4GB RAM, 64GB 6GB RAM, 128GB 6GB RAM"
+    },
+    {
+      "id": "36",
+      "categoryId": "5",
+      "name": "Nokia 5.3",
+      "description":
+      "The phone comes with a 6.55-inch touchscreen display with a resolution of 720x1600 pixels and an aspect ratio of 20:9. Nokia 5.3 is powered by an octa-core Qualcomm Snapdragon 665 processor. It comes with 3GB of RAM. The Nokia 5.3 runs Android 10 and is powered by a 4000mAh non-removable battery.",
+      "price": 210,
+      "image": "/uploads/nokia-53.jpg",
+      "cpu": "Octa-core (4x2.0 GHz Kryo 260 Gold & 4x1.8 GHz Kryo 260 Silver)",
+      "camera": "13 MP, f/1.8, (wide), PDAF",
+      "size": "164.3 x 76.6 x 8.5 mm (6.47 x 3.02 x 0.33 in)",
+      "weight": "185 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4000 mAh battery",
+      "memory": "64GB 3GB RAM, 64GB 4GB RAM, 64GB 6GB RAM"
+    },
+    {
+      "id": "37",
+      "categoryId": "5",
+      "name": "Nokia 4.2",
+      "description":
+      "The Nokia 4.2 has a 5.71-inch IPS LCD display that has a screen resolution of 720 x 1,520 pixels. The smartphone contains a bezel-less display with a notch. The Nokia 4.2 consists of a Qualcomm Snapdragon 439 octa-core processor that runs at a frequency of 1.95GHz.",
+      "price": 130,
+      "image": "/uploads/nokia-42.jpg",
+      "cpu": "Octa-core (4x1.95 GHz Cortex-A53 & 4x1.45 GHz Cortex A53)",
+      "camera": "13 MP, f/2.2, 1/3.1\", 1.12µm, PDAF",
+      "size": "149 x 71.3 x 8.4 mm (5.87 x 2.81 x 0.33 in)",
+      "weight": "161 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3000 mAh battery",
+      "memory": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    {
+      "id": "38",
+      "categoryId": "5",
+      "name": "Nokia 6.2",
+      "description":
+      "Nokia 6.2 is powered by the Qualcomm SDM636 Snapdragon 636 Octa-core 1.8 GHz Kryo 260 processor. The smartphone comes with a 6.3 inches IPS LCD capacitive touchscreen. The smartphone is fueled by a Non-removable Li-Po 3500 mAh battery + battery charging 10W. The phone runs on Android 9.0 (Pie) + Android One.",
+      "price": 245,
+      "image": "/uploads/nokia-62.jpg",
+      "cpu": "Octa-core (4x1.8 GHz Kryo 260 Gold & 4x1.6 GHz Kryo 260 Silver)",
+      "camera": "16 MP, f/1.8, 27mm (wide), 1.0µm, PDAF",
+      "size": "159.9 x 75.1 x 8.3 mm (6.30 x 2.96 x 0.33 in)",
+      "weight": "180 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3500 mAh battery",
+      "memory": "32GB 3GB RAM, 64GB 4GB RAM, 128GB 4GB RAM"
+    },
+    {
+      "id": "39",
+      "categoryId": "5",
+      "name": "Nokia 9 PureView",
+      "description":
+      "Nokia 9 PureView smartphone was launched on 25th February 2019. The phone comes with a 5.99-inch touchscreen display. Nokia 9 PureView is powered by an octa-core Qualcomm Snapdragon 845 processor. Nokia 9 PureView based on Android 9.0 Pie and packs 128GB of inbuilt storage.",
+      "price": 500,
+      "image": "/uploads/nokia-9-pureview.jpg",
+      "cpu": "Octa-core (4x2.8 GHz Kryo 385 Gold & 4x1.7 GHz Kryo 385 Silver)",
+      "camera": "5x 12 MP, f/1.8, 28mm (wide), 1/2.9\", 1.25µm",
+      "size": "155 x 75 x 8 mm (6.10 x 2.95 x 0.31 in)",
+      "weight": "172 g",
+      "display": "P-OLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3320 mAh battery",
+      "memory": "128GB 6GB RAM"
+    },
+    {
+      "id": "40",
+      "categoryId": "5",
+      "name": "Nokia 2.3",
+      "description":
+      "Nokia 2.3 is powered by the Mediatek MT6761 Helio A22 Quad-core 2.0 GHz Cortex-A53 processor. The smartphone comes with a 6.2 inches IPS LCD capacitive touchscreen and 720 x 1520 pixels resolution. The rear camera consists of a 13 MP + 2 MP depth sensor lenses. The phone's sensors include Accelerometer and proximity.",
+      "price": 129,
+      "image": "/uploads/nokia-23.jpg",
+      "cpu": "Quad-core 2.0 GHz Cortex-A53",
+      "camera": "13 MP, f/2.2, 1/3.1\", 1.12µm, AF",
+      "size": "157.7 x 75.4 x 8.7 mm (6.21 x 2.97 x 0.34 in)",
+      "weight": "183 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 4000 mAh battery",
+      "memory": "32GB 2GB RAM"
+    },
+    {
+      "id": "41",
+      "categoryId": "5",
+      "name": "Nokia 2.2",
+      "description":
+      "Nokia 2.2 is expected to released in the month of June, 2019. The dimension of the smartphone is 146 x 70.6 x 9.3 mm (5.75 x 2.78 x 0.37 in) and it weighs 153 grams with battery. The smartphone supports dual SIM card and it runs on Android 9.0 (Pie); Android One operating system.",
+      "price": 159,
+      "image": "/uploads/nokia-22.jpg",
+      "cpu": "Quad-core 2.0 GHz Cortex-A53",
+      "camera": "13 MP, f/2.2, 1/3.1\", 1.12µm, AF",
+      "size": "146 x 70.6 x 9.3 mm (5.75 x 2.78 x 0.37 in)",
+      "weight": "153 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Removable Li-Ion 3000 mAh battery",
+      "memory": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    {
+      "id": "42",
+      "categoryId": "5",
+      "name": "Nokia 5310 (2020)",
+      "description":
+      "Nokia 5310 (2020) is officially released in March 2020 and the official specifications of the phone are mentioned below. The dimension of the device is 123.7 x 52.4 x 13.1 mm and it weighs 88.2 grams. The device is pack with 8 MB RAM while the internal storage includes 16 MB.",
+      "price": 59,
+      "image": "/uploads/nokia-5310.jpg",
+      "cpu": "Mediatek MT6260A",
+      "camera": "VGA",
+      "size": "123.7 x 52.4 x 13.1 mm, 44.8 cc (4.87 x 2.06 x 0.52 in)",
+      "weight": "88.2 g",
+      "display": "TFT",
+      "battery": "Removable Li-Ion 1200 mAh battery",
+      "memory": "16MB 8MB RAM"
+    },
+    {
+      "id": "43",
+      "categoryId": "1",
+      "name": "Apple iPhone SE 2",
+      "description":
+      "The original iPhone SE was a budget 4-inch iPhone before being discontinued in 2018, but Apple revived the name in April 2020 with a new 4.7-inch model that looks like an iPhone 8 with internals similar to those of the iPhone 11. It features an A13 Bionic chip, 3GB RAM.",
+      "price": 399,
+      "image": "/uploads/apple-iphone-se-2020.jpg",
+      "cpu": "Hexa-core (2x2.65 GHz Lightning + 4x1.8 GHz Thunder)",
+      "camera": "12 MP, f/1.8 (wide), PDAF, OIS",
+      "size": "138.4 x 67.3 x 7.3 mm (5.45 x 2.65 x 0.29 in)",
+      "weight": "148 g",
+      "display": "Retina IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 1821 mAh battery (6.96 Wh)",
+      "memory": "64GB 3GB RAM, 128GB 3GB RAM, 256GB 3GB RAM"
+    },
+    {
+      "id": "44",
+      "categoryId": "1",
+      "name": "Apple iPhone 7",
+      "description":
+      "Apple iPhone 7 smartphone was launched in September 2016. The phone comes with a 4.70-inch touchscreen display with a resolution of 750x1334 pixels at a pixel density of 326 pixels per inch (ppi) and an aspect ratio of 16:9. Apple iPhone 7 is powered by a 2.34GHz quad-core Apple A10 Fusion processor.",
+      "price": 150,
+      "image": "/uploads/apple-iphone-7.jpg",
+      "cpu": "Quad-core 2.34 GHz (2x Hurricane + 2x Zephyr)",
+      "camera": "12 MP, f/1.8, 28mm (wide), 1/3\", PDAF, OIS",
+      "size": "138.3 x 67.1 x 7.1 mm (5.44 x 2.64 x 0.28 in)",
+      "weight": "138 g",
+      "display": "Retina IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 1960 mAh battery (7.45 Wh)",
+      "memory": "32GB 2GB RAM, 128GB 2GB RAM, 256GB 2GB RAM"
+    },
+    {
+      "id": "45",
+      "categoryId": "1",
+      "name": "Apple iPhone 11",
+      "description":
+      "With its 6.1-inch display, the iPhone 11 is between the 5.8-inch iPhone 11 Pro and 6.5-inch iPhone 11 Pro Max in size. The iPhone 11 has an edge-to-edge display with slim bezels and no Home button, adopting a notch at the top for the TrueDepth camera system",
+      "price": 150,
+      "image": "/uploads/apple-iphone-11.jpg",
+      "cpu": "Hexa-core (2x2.65 GHz Lightning + 4x1.8 GHz Thunder)",
+      "camera": "12 MP, f/1.8, 26mm (wide), 1/2.55\", 1.4µm, dual pixel PDAF, OIS",
+      "size": "150.9 x 75.7 x 8.3 mm (5.94 x 2.98 x 0.33 in)",
+      "weight": "194 g",
+      "display": "Liquid Retina IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 3110 mAh battery (11.91 Wh)",
+      "memory": "64GB 4GB RAM, 128GB 4GB RAM, 256GB 4GB RAM"
+    },
+    {
+      "id": "46",
+      "categoryId": "1",
+      "name": "Apple iPhone SE",
+      "description":
+      "The first-generation iPhone SE is a smartphone that was designed and marketed by Apple Inc. It is part of the 9th generation of the iPhone alongside the higher-end iPhone 6S and 6S Plus. It was announced on March 21, 2016 at the Town Hall auditorium in the Apple Campus[6] by Apple executive Greg Joswiak,[7] with pre-orders beginning on March 24, 2016.[8] It was officially released on March 31, 2016.[9][10] It was re-released almost a year later on March 24, 2017 with larger storage capacities.[11] The iPhone SE shares the same physical design and dimensions as the iPhone 5S, but has upgraded internal hardware, including the newer Apple A9 system-on-chip, greater battery capacity, and a 12-megapixel rear camera that can record up to 4K video at 30 frames per second. The moniker SE is an acronym for Special Edition.[12] The iPhone SE was discontinued by Apple on September 12, 2018.",
+      "price": 98,
+      "image": "/uploads/apple-iphone-5se-ofic.jpg",
+      "cpu": "Dual-core 1.84 GHz Twister",
+      "camera": "12 MP, f/2.2, 29mm (standard), 1/3\", 1.22µm, PDAF",
+      "size": "123.8 x 58.6 x 7.6 mm (4.87 x 2.31 x 0.30 in)",
+      "weight": "113 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 1624 mAh battery (6.21 Wh)",
+      "memory": "16GB 2GB RAM, 32GB 2GB RAM, 64GB 2GB RAM, 128GB 2GB RAM"
+    },
+    {
+      "id": "47",
+      "categoryId": "1",
+      "name": "Apple iPhone 6",
+      "description":
+      "The iPhone 6 designed and marketed by Apple Inc. It is the eighth generation of the iPhone, succeeding the iPhone 5S, and was announced on September 9, 2014 and released on September 19, 2014.[18] The iPhone 6 and iPhone 6 Plus jointly were themselves replaced as the flagship devices of the iPhone series by the iPhone 6S and iPhone 6S Plus on September 9, 2015. The iPhone 6 and 6 Plus include larger 4.7 and 5.5 inches (120 and 140 mm) displays, a faster processor, upgraded cameras, improved LTE and Wi-Fi connectivity and support for a near field communications-based mobile payments offering",
+      "price": 70,
+      "image": "/uploads/apple-iphone-6.jpg",
+      "cpu": "Dual-core 1.4 GHz Typhoon (ARM v8-based)",
+      "camera": "8 MP, f/2.2, 29mm (standard), 1/3\", 1.5µm, PDAF",
+      "size": "138.1 x 67 x 6.9 mm (5.44 x 2.64 x 0.27 in)",
+      "weight": "129 g",
+      "display": "IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Po 1810 mAh battery (6.9 Wh)",
+      "memory": "16GB 1GB RAM, 32GB 1GB RAM, 64GB 1GB RAM, 128GB 1GB RAM"
+    },
+    {
+      "id": "48",
+      "categoryId": "1",
+      "name": "Apple iPhone X",
+      "description":
+      "The iPhone X was Apple's flagship 10th anniversary iPhone featuring a 5.8-inch OLED display, facial recognition and 3D camera functionality, a glass body, and an A11 Bionic processor. Launched November 3, 2017, discontinued with the launch of the iPhone XR, XS, and XS Max.",
+      "price": 450,
+      "image": "/uploads/apple-iphone-x.jpg",
+      "cpu": "Hexa-core 2.39 GHz (2x Monsoon + 4x Mistral)",
+      "camera": "12 MP, f/1.8, 28mm (wide), 1/3\", 1.22µm, dual pixel PDAF, OIS",
+      "size": "143.6 x 70.9 x 7.7 mm (5.65 x 2.79 x 0.30 in)",
+      "weight": "174 g",
+      "display": "Super Retina OLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 2716 mAh battery (10.35 Wh)",
+      "memory": "64GB 3GB RAM, 256GB 3GB RAM"
+    },
+    {
+      "id": "49",
+      "categoryId": "1",
+      "name": "Apple iPhone XS",
+      "description":
+      "Apple's new phone comes in two sizes: the iPhone XS, with a 5.8-inch display, and the iPhone XS Max, with a 6.5-inch display. It has the same sharpness, at 458 pixels per inch, which gives it a resolution of 2688 x 1242. The iPhone XS comes in two sizes: large, and larger.",
+      "price": 470,
+      "image": "/uploads/apple-iphone-xs-new.jpg",
+      "cpu": "Hexa-core (2x2.5 GHz Vortex + 4x1.6 GHz Tempest)",
+      "camera": "12 MP, f/1.8, 26mm (wide), 1/2.55\", 1.4µm, dual pixel PDAF, OIS",
+      "size": "143.6 x 70.9 x 7.7 mm (5.65 x 2.79 x 0.30 in)",
+      "weight": "177 g",
+      "display": "Super Retina OLED capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 2658 mAh battery (10.13 Wh)",
+      "memory": "64GB 4GB RAM, 256GB 4GB RAM, 512GB 4GB RAM"
+    },
+    {
+      "id": "50",
+      "categoryId": "1",
+      "name": "Apple iPhone 8",
+      "description":
+      "The iPhone 8 features a 4.7-inch display with a resolution of 1334 by 750 with 326 pixels per inch and a 1400:1 contrast ratio, while the iPhone 8 Plus features a 5.5-inch display with a 1920 by 1080 resolution, 401 pixels per inch, and a 1300:1 contrast ratio.",
+      "price": 255,
+      "image": "/uploads/apple-iphone-8.jpg",
+      "cpu": "Hexa-core (2x Monsoon + 4x Mistral)",
+      "camera": "12 MP, f/1.8, 28mm (wide), PDAF, OIS",
+      "size": "138.4 x 67.3 x 7.3 mm (5.45 x 2.65 x 0.29 in)",
+      "weight": "148 g",
+      "display": "Retina IPS LCD capacitive touchscreen, 16M colors",
+      "battery": "Non-removable Li-Ion 1821 mAh battery (6.96 Wh)",
+      "memory": "64GB 2GB RAM, 256GB 2GB RAM"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Apple"
+    },
+    {
+      "id": "2",
+      "name": "Samsung"
+    },
+    {
+      "id": "3",
+      "name": "Htc"
+    },
+    {
+      "id": "4",
+      "name": "Lenovo"
+    },
+    {
+      "id": "5",
+      "name": "Nokia"
+    }
+  ]
+}

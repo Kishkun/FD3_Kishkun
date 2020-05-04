@@ -1,5 +1,4 @@
 import * as R from "ramda";
-import {equals} from "ramda";
 
 export const getPhoneById = (state, id) => {
     return R.prop(id, state.phones)   //return state.phones[id]
@@ -13,7 +12,7 @@ export const getActiveCategoryId = (ownProps) => {
 export const getPhones = (state, ownProps) => {
     const activeCategoryId = getActiveCategoryId(ownProps);
     const applySearch = (item) => {
-        return(
+        return (
             R.contains(
                 // contains проверяет есть ли 1 аргумент во 2( true, false)
                 state.phonesPage.search,
@@ -23,12 +22,12 @@ export const getPhones = (state, ownProps) => {
         )
     };
     const applyCategory = (item) => {
-      return(
-          R.equals(
-              activeCategoryId,
-              R.prop("categoryId", item)
-          )
-      )
+        return (
+            R.equals(
+                activeCategoryId,
+                R.prop("categoryId", item)
+            )
+        )
     };
     const phones = R.compose(
         R.filter(applySearch),
@@ -66,4 +65,30 @@ export const getTotalBasketPrice = (state) => {
 export const getCategories = (state) => {
     // возввращаем все значения категорий
     return R.values(state.categories);
+};
+
+export const getBasketPhonesWithCount = (state) => {
+    const phoneCount = (id) => {
+        return (
+            R.compose(
+                R.length,
+                // ищем id которые совпадают
+                R.filter(basketId => R.equals(id, basketId))
+            )(state.basket)
+        )
+    };
+    // в каждый телефон добавляем(создаем) поле count
+    const phoneWithCount = (phone) => {
+        return (
+            R.assoc("count", phoneCount(phone.id), phone)
+        )
+    };
+    // находим уникальные id с корзины
+    const uniqueIds = R.uniq(state.basket);
+    const phones = R.compose(
+        R.map(phoneWithCount),
+        R.map(id => getPhoneById(state, id))
+    )(uniqueIds);
+
+    return phones
 };

@@ -67,7 +67,11 @@ class Phone extends React.Component {
                     </div>
                 </div>
                 <div className="caption-full">
-                    <h4 className="float-right">${phone.price}</h4>
+                    {
+                        phone.price ?
+                            <h4 className="float-right">${phone.price}</h4> :
+                            <h6 className="float-right">discontinued</h6>
+                    }
                     <h4>{phone.name}</h4>
                     <p>{phone.description}</p>
                 </div>
@@ -76,26 +80,40 @@ class Phone extends React.Component {
     };
 
     renderSidebar = () => {
-        const {phone, addPhoneToBasket} = this.props
+        const {phone, addPhoneToBasket} = this.props;
 
         return (
             <div>
                 <p className="lead">Quick shop</p>
                 <BasketCart/>
                 <div className="form-group">
-                    <h1>{phone.name}</h1>
-                    <h2>${phone.price}</h2>
+                    <h2>{phone.name}</h2>
+                    {
+                        phone.price ?
+                            <h2>${phone.price}</h2> :
+                            <h5>discontinued</h5>
+                    }
                     <Link
                         to="/"
                         className="btn btn-info btn-block"
                     >Back to store
                     </Link>
-                    <button
-                        type="button"
-                        className="btn btn-success btn-block"
-                        onClick={() => addPhoneToBasket(phone.id)}
-                    >Add to cart
-                    </button>
+                    {
+                        phone.price ?
+                            <button
+                                type="button"
+                                className="btn btn-success btn-block"
+                                onClick={() => addPhoneToBasket(phone.id)}
+                            >Add to cart
+                            </button> :
+                            <button
+                                type="button"
+                                className="btn btn-danger btn-block"
+                                disabled
+                            >Not add to cart
+                            </button>
+                    }
+
                 </div>
             </div>
         )

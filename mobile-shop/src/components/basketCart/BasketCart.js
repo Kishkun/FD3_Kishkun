@@ -9,11 +9,11 @@ import {
 
 const BasketCart = (props) => {
     let {totalBasketCount, totalPrice} = props;
-    return(
+    return (
         <div className="cart">
             <div className="dropdown">
                 <Link
-                    to="basket/"
+                    to="/basket"
                     id="dLabel"
                     className="btn btn-inverse btn-block btn-lg"
                 >
@@ -28,10 +28,10 @@ const BasketCart = (props) => {
 };
 // получение общей суммы и количества телефонов
 const mapStateToProps = (state) => {
-  return{
-      totalBasketCount: getTotalBasketCount(state),
-      totalPrice: getTotalBasketPrice(state)
-  }
+    return {
+        totalBasketCount: getTotalBasketCount(state),
+        totalPrice: getTotalBasketPrice(state)
+    }
 };
 
 export default connect(mapStateToProps, null)(BasketCart);

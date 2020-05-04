@@ -17,7 +17,13 @@ import {
 
     FETCH_CATEGORIES_START,
     FETCH_CATEGORIES_SUCCESS,
-    FETCH_CATEGORIES_FAILURE
+    FETCH_CATEGORIES_FAILURE,
+
+    REMOVE_PHONE_FROM_BASKET,
+
+    CLEAN_BASKET,
+
+    CHECKOUT_BASKET
 } from "./actionTypes"
 
 import {
@@ -125,4 +131,24 @@ export const fetchCategories = () => async dispatch => {
             error: true
         })
     }
+};
+
+export const removePhoneFromBasket = (id) => dispatch => {
+    dispatch({
+        type: REMOVE_PHONE_FROM_BASKET,
+        payload: id
+    })
+};
+
+export const cleanBasket = () => dispatch => {
+    dispatch({
+        type: CLEAN_BASKET
+    })
+};
+
+export const basketCheckout = (phones) => dispatch => {
+    dispatch({
+        type: CHECKOUT_BASKET,
+        payload: phones
+    })
 };
