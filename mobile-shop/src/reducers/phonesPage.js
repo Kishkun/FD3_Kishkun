@@ -3,12 +3,14 @@ import * as R from "ramda";
 import {
     FETCH_PHONES_SUCCESS,
     LOAD_MORE_PHONES_SUCCESS,
-    SEARCH_PHONE
+    SEARCH_PHONE,
+    TOGGLE_IS_FETCHING
 } from "../actions/actionTypes";
 
 const initialState = {
     ids: [],
-    search: ''
+    search: '',
+    isFetching: false
 };
 
 const phonesPage = (state = initialState, {type, payload}) => {
@@ -25,6 +27,10 @@ const phonesPage = (state = initialState, {type, payload}) => {
         case SEARCH_PHONE:
             return R.merge(state, {
                 search: payload
+            });
+        case TOGGLE_IS_FETCHING:
+            return R.merge(state, {
+                isFetching: payload
             });
         default:
             return state

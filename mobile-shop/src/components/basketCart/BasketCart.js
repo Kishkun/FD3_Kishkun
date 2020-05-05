@@ -7,25 +7,33 @@ import {
     getTotalBasketPrice
 } from "../../selectors/selectors"
 
-const BasketCart = (props) => {
-    let {totalBasketCount, totalPrice} = props;
-    return (
-        <div className="cart">
-            <div className="dropdown">
-                <Link
-                    to="/basket"
-                    id="dLabel"
-                    className="btn btn-inverse btn-block btn-lg"
-                >
-                    <i className="fa fa-fa-shopping-cart"></i>
-                    <span>
+class BasketCart extends React.Component {
+
+    render() {
+        const {totalBasketCount, totalPrice} = this.props;
+
+        const iconStyle = (totalBasketCount) ? "icon anime" : "icon";
+
+        return (
+            <div className="cart">
+                <div className="dropdown">
+                    <Link
+                        to="/basket"
+                        id="dLabel"
+                        className="btn btn-inverse btn-block btn-lg"
+                    >
+                    <span className={iconStyle}>
+                        <i className="fa fa-shopping-cart"></i>
+                    </span>
+                        <span className="price-info">
                         {totalBasketCount} item(s) - ${totalPrice}
                     </span>
-                </Link>
+                    </Link>
+                </div>
             </div>
-        </div>
-    )
-};
+        )
+    }
+}
 // получение общей суммы и количества телефонов
 const mapStateToProps = (state) => {
     return {

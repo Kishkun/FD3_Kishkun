@@ -4,6 +4,12 @@ import {Link} from "react-router-dom";
 import * as R from "ramda";
 
 import {
+    TransitionGroup,
+    CSSTransition,
+    Transition
+} from "react-transition-group";
+
+import {
     getTotalBasketPrice,
     getBasketPhonesWithCount
 } from "../../selectors/selectors"
@@ -27,35 +33,37 @@ const Basket = (props) => {
     const renderContent = () => {
         return (
             <div>
-                {isBasketEmpty && <div>Your shopping cart is empty</div>}
-                <div className="table-responsive">
-                    <table className="table-bordered table-striped table-condensed cf">
-                        <tbody>
+                <div
+                    className={isBasketEmpty ? "empty-block show" : "empty-block"}>
+                    Your shopping cart is empty</div>
+                <div className="info-block">
+                    <TransitionGroup>
                         {phones.map((phone) => (
-                            <tr
-                                key={phone.id}
-                                className="item-checout"
-                            >
-                                <td className="first-column-checkout">
-                                    <img
-                                        className="img-thumbnail"
-                                        src={phone.image}
-                                        alt={phone.name}
-                                    />
-                                </td>
-                                <td>{phone.name}</td>
-                                <td>${phone.price}</td>
-                                <td>{phone.count}</td>
-                                <td>
+                            <CSSTransition
+                                timeout={300}
+                                classNames="item"
+                                key={phone.id}>
+                                <div className="item-inner">
+                                    <div className="item-td">
+                                        <img
+                                            className="img-thumbnail"
+                                            src={phone.image}
+                                            alt={phone.name}
+                                        />
+                                    </div>
+                                    <div className="item-td">{phone.name}</div>
+                                    <div className="item-td">${phone.price}</div>
+                                    <div className="item-td">{phone.count}</div>
+                                    <div className="item-td">
                                     <span
                                         className="delete-cart"
                                         onClick={() => removePhoneFromBasket(phone.id)}
                                     ></span>
-                                </td>
-                            </tr>
+                                    </div>
+                                </div>
+                            </CSSTransition>
                         ))}
-                        </tbody>
-                    </table>
+                    </TransitionGroup>
                 </div>
                 {
                     R.not(isBasketEmpty) &&
@@ -79,9 +87,13 @@ const Basket = (props) => {
                     <i className="fa fa-info"></i>
                     <span className="btn-title">Continue shopping!</span>
                 </Link>
-                {
-                    R.not(isBasketEmpty) &&
-                    <div>
+                <Transition
+                    in={!isBasketEmpty}
+                    timeout={300}
+                    mountOnEnter
+                    unmountOnExit
+                >
+                    <div className="basket_service-btn">
                         <button
                             onClick={cleanBasket}
                             className="btn btn-block btn-danger"
@@ -97,7 +109,7 @@ const Basket = (props) => {
                             <span className="btn-title">Checkout</span>
                         </button>
                     </div>
-                }
+                </Transition>
             </div>
         )
     };

@@ -1,20 +1,26 @@
-#page-preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    z-index: 100500;
-}
-#page-preloader .spinner {
-    width: 64px;
-    height: 64px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    background: url('/images/preloader.gif') no-repeat 50% 50%;
-    margin: -32px 0 0 -32px;
+/*#page-preloader {*/
+/*    position: fixed;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    background: #fff;*/
+/*    z-index: 100500;*/
+/*}*/
+/*#page-preloader .spinner {*/
+/*    width: 64px;*/
+/*    height: 64px;*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    background: url('/images/preloader.gif') no-repeat 50% 50%;*/
+/*    margin: -32px 0 0 -32px;*/
+/*}*/
+.preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 .view-container {
     margin-top: 20px;
@@ -37,11 +43,14 @@
     background: url(/images/trash.svg) no-repeat 0 0;
     background-size: cover;
     display: block;
-    height: 16px;
-    width: 16px;
+    height: 24px;
+    width: 24px;
+    margin: 0 auto;
+    transition: all 0.3s linear;
 }
 .delete-cart:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
 .books .book-list {
     display: inline-block;
@@ -60,36 +69,39 @@
     background: #e4e4e4;
     padding: 5px;
 }
-.item-checout .first-column-checkout {
-    width: 10%;
-}
-.item-checout td {
-    border-bottom: 1px solid #ddd;
-    border-top: none !important;
-    text-align: center;
-    vertical-align: middle !important;
-}
-.item-checout img {
-    height: 100px;
-    object-fit: cover;
-    object-position: center;
-}
-.table-bordered {
-    border-collapse: separate;
-    border-radius: 4px;
-}
 .total-user-checkout {
     margin-right: 20px;
     margin-top: 15px;
     margin-left: auto;
 }
-.item-checout .delete-cart {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
 .total {
     margin: 5px 5px 5px 0;
+}
+.info-block {
+
+}
+.info-block .item {
+
+}
+.info-block .item-inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background: #ddd;
+    border: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+.info-block .item-td {
+    width: 20%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-block .img-thumbnail {
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
 }
 .dropdown .btn-inverse {
     background: #50a8e1;
@@ -99,6 +111,16 @@
 }
 .dropdown .btn-inverse:hover {
     background: rgba(80, 168, 225, .9);
+}
+.dropdown .icon {
+    position: absolute;
+    left: 9%;
+}
+.dropdown .price-info {
+    padding-left: 20px;
+}
+.dropdown .icon.anime > i {
+    animation: wobble-hor-bottom 0.8s both;
 }
 .phone-sidebar .form-group {
     margin-top: 1rem;
@@ -147,6 +169,54 @@
 }
 .btn {
     transition: all 0.3s linear;
+}
+.item-enter {
+    opacity: 0;
+}
+.item-enter-active {
+    opacity: 1;
+    transition: opacity 300ms ease-in;
+}
+.item-exit {
+    opacity: 1;
+}
+.item-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+}
+.basket_service-btn.entered {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+}
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+    15% {
+        transform: translateX(-3px) rotate(-6deg);
+    }
+    30% {
+        transform: translateX(3px) rotate(6deg);
+    }
+    45% {
+        transform: translateX(-3px) rotate(-3.6deg);
+    }
+    60% {
+        transform: translateX(3px) rotate(2.4deg);
+    }
+    75% {
+        transform: translateX(-3px) rotate(-1.2deg);
+    }
+}
+.empty-block{
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    position: absolute;
+}
+.empty-block.show{
+    opacity: 1;
 }
 @media only screen and (max-width: 1200px) {
 }

@@ -23,7 +23,9 @@ import {
 
     CLEAN_BASKET,
 
-    CHECKOUT_BASKET
+    CHECKOUT_BASKET,
+
+    TOGGLE_IS_FETCHING
 } from "./actionTypes"
 
 import {
@@ -150,5 +152,12 @@ export const basketCheckout = (phones) => dispatch => {
     dispatch({
         type: CHECKOUT_BASKET,
         payload: phones
+    })
+};
+
+export const toggleIsFetching = (isFetching) => dispatch => {
+    dispatch({
+        type: TOGGLE_IS_FETCHING,
+        payload: isFetching
     })
 };
