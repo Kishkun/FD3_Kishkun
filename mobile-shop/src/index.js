@@ -10,7 +10,7 @@ import {Provider} from "react-redux";
 import "./main.css";
 
 import createRootReducer from "./reducers";
-import routes from "./routes/routes";
+import Routes from "./routes/Routes";
 
 
 
@@ -24,7 +24,7 @@ const store = createStore(
 ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
-            {routes}
+            <Routes />
         </ConnectedRouter>
     </Provider>,
     document.getElementById("root")

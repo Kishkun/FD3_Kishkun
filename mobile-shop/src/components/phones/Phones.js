@@ -4,11 +4,6 @@ import {Link} from "react-router-dom";
 import * as R from "ramda";
 
 import {
-    TransitionGroup,
-    CSSTransition
-} from "react-transition-group";
-
-import {
     fetchPhones,
     loadMorePhones,
     addPhoneToBasket,
@@ -35,57 +30,51 @@ class Phones extends React.Component {
         const showDescription = `${R.take(55, phone.description)}...`;
         const {addPhoneToBasket} = this.props;
         return (
-            <CSSTransition
-                key={phone.id}
-                timeout={300}
-                classNames="item"
-            >
-                <div className="col-sm-4 book-list">
-                    <div className="thumbnail">
-                        <img
-                            className="img-thumbnail castom-img"
-                            src={phone.image}
-                            alt={phone.name}
-                        />
-                        <div className="caption">
+            <div className="col-sm-4 book-list" key={phone.id}>
+                <div className="thumbnail">
+                    <img
+                        className="img-thumbnail castom-img"
+                        src={phone.image}
+                        alt={phone.name}
+                    />
+                    <div className="caption">
+                        {
+                            phone.price ?
+                                <h5 className="float-right">${phone.price}</h5> :
+                                <h6 className="float-right">discontinued</h6>
+                        }
+                        <h5>
+                            <Link to={`/phones/${phone.id}`}>
+                                {phone.name}
+                            </Link>
+                        </h5>
+                        <p>{showDescription}</p>
+                        <p className="itemButton">
                             {
                                 phone.price ?
-                                    <h5 className="float-right">${phone.price}</h5> :
-                                    <h6 className="float-right">discontinued</h6>
+                                    <button
+                                        className="btn btn-primary"
+                                        onClick={() => addPhoneToBasket(phone.id)}
+                                    >
+                                        Buy now!
+                                    </button> :
+                                    <button
+                                        className="btn btn-danger"
+                                        disabled
+                                    >
+                                        Buy not!
+                                    </button>
                             }
-                            <h5>
-                                <Link to={`/phones/${phone.id}`}>
-                                    {phone.name}
-                                </Link>
-                            </h5>
-                            <p>{showDescription}</p>
-                            <p className="itemButton">
-                                {
-                                    phone.price ?
-                                        <button
-                                            className="btn btn-primary"
-                                            onClick={() => addPhoneToBasket(phone.id)}
-                                        >
-                                            Buy now!
-                                        </button> :
-                                        <button
-                                            className="btn btn-danger"
-                                            disabled
-                                        >
-                                            Buy not!
-                                        </button>
-                                }
-                                <Link
-                                    to={`/phones/${phone.id}`}
-                                    className="btn btn-default"
-                                >
-                                    More info
-                                </Link>
-                            </p>
-                        </div>
+                            <Link
+                                to={`/phones/${phone.id}`}
+                                className="btn btn-default"
+                            >
+                                More info
+                            </Link>
+                        </p>
                     </div>
                 </div>
-            </CSSTransition>
+            </div>
         )
     };
 
@@ -101,11 +90,7 @@ class Phones extends React.Component {
             }
             <Layout>
                 <div className="books row">
-                    <TransitionGroup>
-                        {
-                            phones.map(phone => this.renderPhone(phone))
-                        }
-                    </TransitionGroup>
+                    {phones.map(phone => this.renderPhone(phone))}
                 </div>
                 <div className="row">
                     <div className="col-12">

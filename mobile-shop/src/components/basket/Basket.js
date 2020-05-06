@@ -2,6 +2,7 @@ import React from "react";
 import {connect} from "react-redux";
 import {Link} from "react-router-dom";
 import * as R from "ramda";
+import classNames from "classnames";
 
 import {
     TransitionGroup,
@@ -30,11 +31,16 @@ const Basket = (props) => {
     } = props;
 
     const isBasketEmpty = R.isEmpty(phones);
+
+    const emptyClass = classNames({
+        "empty-block": true,
+        "show": isBasketEmpty
+    });
     const renderContent = () => {
         return (
             <div>
                 <div
-                    className={isBasketEmpty ? "empty-block show" : "empty-block"}>
+                    className={emptyClass}>
                     Your shopping cart is empty</div>
                 <div className="info-block">
                     <TransitionGroup>

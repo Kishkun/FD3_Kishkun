@@ -67,7 +67,6 @@ export const loadMorePhones = () => async (dispatch, getState) => {
     try {
         const phones = await loadMorePhonesApi({offset});
         // phones.length = offset + 3;
-        console.log(phones);
         dispatch({
             type: LOAD_MORE_PHONES_SUCCESS,
             payload: phones

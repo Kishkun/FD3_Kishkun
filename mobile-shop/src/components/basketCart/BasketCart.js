@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {connect} from "react-redux";
+import classNames from "classnames";
 
 import {
     getTotalBasketCount,
@@ -12,7 +13,10 @@ class BasketCart extends React.Component {
     render() {
         const {totalBasketCount, totalPrice} = this.props;
 
-        const iconStyle = (totalBasketCount) ? "icon anime" : "icon";
+        const iconClass = classNames({
+            "icon": true,
+            "anime": totalBasketCount
+        });
 
         return (
             <div className="cart">
@@ -22,7 +26,7 @@ class BasketCart extends React.Component {
                         id="dLabel"
                         className="btn btn-inverse btn-block btn-lg"
                     >
-                    <span className={iconStyle}>
+                    <span className={iconClass}>
                         <i className="fa fa-shopping-cart"></i>
                     </span>
                         <span className="price-info">
