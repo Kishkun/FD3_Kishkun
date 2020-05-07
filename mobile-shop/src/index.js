@@ -14,9 +14,8 @@ import Routes from "./routes/Routes";
 
 
 
-// const history = createBrowserHistory();
 const history = createBrowserHistory({
-    basename: "/store"
+    basename: "/store/"
 });
 const middlewares = [thunk, routerMiddleware(history)];
 const store = createStore(
