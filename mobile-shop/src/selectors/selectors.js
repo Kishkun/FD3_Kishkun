@@ -15,9 +15,9 @@ export const getPhones = (state, ownProps) => {
         return (
             R.contains(
                 // contains проверяет есть ли 1 аргумент во 2( true, false)
-                state.phonesPage.search,
+                R.toLower(state.phonesPage.search),
                 // item.name
-                R.prop("name", item)
+                R.toLower(R.prop("name", item))
             )
         )
     };
@@ -41,8 +41,9 @@ export const getPhones = (state, ownProps) => {
     // return phones;
 };
 
-export const getRendererLoadLength = (state) => {
-    return R.length(state.phonesPage.ids);
+export const getVisiblePhones = (state, ownProps) => {
+    const visiblePhones = getPhones(state, ownProps);
+    return R.slice(0, state.phonesPage.phonesCount, visiblePhones);
 };
 
 export const getTotalBasketCount = (state) => {

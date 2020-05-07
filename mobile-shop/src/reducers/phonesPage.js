@@ -1,36 +1,37 @@
 import * as R from "ramda";
 
 import {
+    FETCH_CATEGORIES_SUCCESS,
     FETCH_PHONES_SUCCESS,
     LOAD_MORE_PHONES_SUCCESS,
-    SEARCH_PHONE,
-    TOGGLE_IS_FETCHING
+    SEARCH_PHONE
 } from "../actions/actionTypes";
 
 const initialState = {
     ids: [],
-    search: '',
-    isFetching: false
+    search: "",
+    phonesCount: 5
 };
 
-const phonesPage = (state = initialState, {type, payload}) => {
+const phonesPage = (state = initialState, {type, payload, morePhonesCount}) => {
     switch (type) {
         case FETCH_PHONES_SUCCESS:
             return R.merge(state, {
-               ids: R.pluck("id", payload)
+                ids: R.pluck("id", payload)
             });
         case LOAD_MORE_PHONES_SUCCESS:
-            const ids = R.pluck("id", payload);
             return R.merge(state, {
-                ids: R.concat(state.ids, ids)
+                phonesCount: state.phonesCount + morePhonesCount
             });
         case SEARCH_PHONE:
             return R.merge(state, {
-                search: payload
+                search: payload,
+                phonesCount: initialState.phonesCount
             });
-        case TOGGLE_IS_FETCHING:
+        case FETCH_CATEGORIES_SUCCESS:
             return R.merge(state, {
-                isFetching: payload
+                search: initialState.search,
+                phonesCount: initialState.phonesCount
             });
         default:
             return state

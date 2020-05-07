@@ -9,16 +9,7 @@ export const fetchPhones = async () => {
     // return new Promise((resolve, reject) => {
     //     resolve(phones)
     // })
-    const {body} = await request.get('http://www.mocky.io/v2/5eb040b13300005c00c68d03');
-    return body.phones
-};
-
-export const loadMorePhones = async ({offset}) => {
-    // request.get(`https://google.com/api/phones/?offset=${offset}`);
-    // return new Promise((resolve, reject) => {
-    //     resolve(phones)
-    // })
-    const {body} = await request.get('http://www.mocky.io/v2/5eb040b13300005c00c68d03');
+    const {body} = await request.get('//www.mocky.io/v2/5eb040b13300005c00c68d03');
     return body.phones
 };
 
@@ -27,7 +18,7 @@ export const fetchPhoneById = async (id) => {
     //     const phone = R.find(R.propEq("id", id), phones);
     //     resolve(phone)
     // })
-    const {body} = await request.get('http://www.mocky.io/v2/5eb040b13300005c00c68d03');
+    const {body} = await request.get('//www.mocky.io/v2/5eb040b13300005c00c68d03');
     const phone = R.find(R.propEq("id", id), body.phones);
     return phone
 };
@@ -37,6 +28,6 @@ export const fetchCategories = async () => {
     //     resolve(categories)
     //     // reject('error')
     // })
-    const {body} = await request.get('http://www.mocky.io/v2/5eb040b13300005c00c68d03');
+    const {body} = await request.get('//www.mocky.io/v2/5eb040b13300005c00c68d03');
     return body.categories
 };

@@ -24,6 +24,3 @@ export const CLEAN_BASKET = "CLEAN_BASKET";
 
 export const CHECKOUT_BASKET = "CHECKOUT_BASKET";
 
-
-export const TOGGLE_IS_FETCHING = "TOGGLE_IS_FETCHING";
-

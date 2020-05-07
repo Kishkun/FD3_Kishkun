@@ -7,10 +7,10 @@ const Layout = (props) => {
         <div className="view-container">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-md-5 col-lg-3">
                         <Sidebar />
                     </div>
-                    <div className="col-md-9">
+                    <div className="col-md-7 col-lg-9">
                         {children}
                     </div>
                 </div>

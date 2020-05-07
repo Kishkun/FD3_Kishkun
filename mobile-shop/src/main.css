@@ -24,6 +24,7 @@
 }
 .view-container {
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 .itemButton {
     margin-top: 20px;
@@ -59,9 +60,9 @@
     margin-bottom: 5%;
 }
 .castom-img {
-    height: 335px;
-    object-fit: cover;
-    object-position: center;
+    height: 290px;
+    margin: 0 auto;
+    display: block;
 }
 .well {
     border-radius: 4px;
@@ -95,11 +96,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.info-block .img-thumbnail {
-    height: 150px;
-    object-fit: cover;
-    object-position: center;
 }
 .dropdown .btn-inverse {
     background: #50a8e1;
@@ -240,10 +236,26 @@
 @media only screen and (max-width: 1200px) {
 }
 @media only screen and (max-width: 992px) {
+
 }
 @media only screen and (max-width: 768px) {
+    .well {
+        margin: 5% 0;
+    }
+    .option-btn{
+        padding-top: 45px;
+    }
+    .empty-block {
+        text-align: center;
+        left: 50%;
+        width: max-content;
+        transform: translateX(-50%);
+    }
 }
 @media only screen and (max-width: 480px) {
+    .info-block .item-td {
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 320px) {
 }

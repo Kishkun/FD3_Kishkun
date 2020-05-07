@@ -24,17 +24,15 @@ import {
     CLEAN_BASKET,
 
     CHECKOUT_BASKET,
-
-    TOGGLE_IS_FETCHING
 } from "./actionTypes"
 
 import {
     fetchPhones as fetchPhonesApi,
-    loadMorePhones as loadMorePhonesApi,
     fetchPhoneById as fetchPhoneByIdApi,
     fetchCategories as fetchCategoriesApi
 } from "../api/index"
-import {getRendererLoadLength} from "../selectors/selectors";
+
+const MORE_PHONES_COUNT = 5;
 
 export const fetchPhones = () => async dispatch => {
     dispatch({
@@ -43,8 +41,6 @@ export const fetchPhones = () => async dispatch => {
 
     try {
         const phones = await fetchPhonesApi();
-        // let limit = 3;
-        // phones.length = limit;
         dispatch({
             type: FETCH_PHONES_SUCCESS,
             payload: phones
@@ -58,18 +54,16 @@ export const fetchPhones = () => async dispatch => {
     }
 };
 
-export const loadMorePhones = () => async (dispatch, getState) => {
-    const offset = getRendererLoadLength(getState());
+export const loadMorePhones = () => async (dispatch) => {
     dispatch({
         type: LOAD_MORE_PHONES_START
     });
 
     try {
-        const phones = await loadMorePhonesApi({offset});
-        // phones.length = offset + 3;
         dispatch({
             type: LOAD_MORE_PHONES_SUCCESS,
-            payload: phones
+            morePhonesCount: MORE_PHONES_COUNT,
+            payload: []
         })
     } catch (err) {
         dispatch({
@@ -151,12 +145,5 @@ export const basketCheckout = (phones) => dispatch => {
     dispatch({
         type: CHECKOUT_BASKET,
         payload: phones
-    })
-};
-
-export const toggleIsFetching = (isFetching) => dispatch => {
-    dispatch({
-        type: TOGGLE_IS_FETCHING,
-        payload: isFetching
     })
 };

@@ -7,30 +7,24 @@ import {
     fetchPhones,
     loadMorePhones,
     addPhoneToBasket,
-    fetchCategories,
-    toggleIsFetching
+    fetchCategories
 } from "../../actions";
-import {getPhones} from "../../selectors/selectors";
+import {getPhones, getVisiblePhones} from "../../selectors/selectors";
 import Layout from "../layout/Layout";
 
 class Phones extends React.Component {
 
     componentDidMount() {
-        this.props.toggleIsFetching(false);
         this.props.fetchPhones();
         this.props.fetchCategories();
     }
-
-    // componentWillUnmount() {
-    //     this.props.toggleIsFetching(false);
-    // }
 
     renderPhone = (phone) => {
         //show 55 symbol description
         const showDescription = `${R.take(55, phone.description)}...`;
         const {addPhoneToBasket} = this.props;
         return (
-            <div className="col-sm-4 book-list" key={phone.id}>
+            <div className="col-sm-6 col-lg-4 book-list" key={phone.id}>
                 <div className="thumbnail">
                     <img
                         className="img-thumbnail castom-img"
@@ -79,56 +73,40 @@ class Phones extends React.Component {
     };
 
     render() {
-        const {phones, loadMorePhones, isFetching} = this.props;
-        return <>
-            {
-                isFetching ?
-                    <div className="preloader">
-                        <img src="./images/preloader.gif" alt="preloader"/>
-                    </div> :
-                    null
-            }
+        const {filteredPhones, loadMorePhones, visiblePhones} = this.props;
+        const isBtnVisible = visiblePhones.length < filteredPhones.length;
+        return(
             <Layout>
                 <div className="books row">
-                    {phones.map(phone => this.renderPhone(phone))}
+                    {visiblePhones.map(phone => this.renderPhone(phone))}
                 </div>
-                <div className="row">
-                    <div className="col-12">
-                        <button className="btn btn-primary float-right"
-                                onClick={loadMorePhones}
-                        >
-                            Load More
-                        </button>
-                        <div className="pagination-block">
-                            <button className="btn btn-outline-primary"
-                                // onClick={loadMorePhones}
+                {
+                    isBtnVisible &&
+                    <div className="row">
+                        <div className="col-12">
+                            <button className="btn btn-primary float-right"
+                                    onClick={loadMorePhones}
                             >
-                                1
-                            </button>
-                            <button className="btn btn-outline-primary"
-                                // onClick={loadMorePhones}
-                            >
-                                2
+                                Load More
                             </button>
                         </div>
                     </div>
-                </div>
+                }
             </Layout>
-        </>
+        )
     }
 }
 
 const mapStateToProps = (state, ownProps) => ({
-    phones: getPhones(state, ownProps),
-    isFetching: state.phonesPage.isFetching
+    filteredPhones: getPhones(state, ownProps),
+    visiblePhones: getVisiblePhones(state, ownProps)
 });
 
 const mapDispatchToProps = {
     fetchPhones,
     loadMorePhones,
     addPhoneToBasket,
-    fetchCategories,
-    toggleIsFetching
+    fetchCategories
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Phones);
