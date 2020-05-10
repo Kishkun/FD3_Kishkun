@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing BasketCart component 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <Connect(Phone)
+        match={
+          Object {
+            "params": Object {
+              "id": "1",
+            },
+          }
+        }
+      >
+        <Phone
+          addPhoneToBasket={[Function]}
+          fetchPhoneById={[Function]}
+          match={
+            Object {
+              "params": Object {
+                "id": "1",
+              },
+            }
+          }
+        >
+          <div
+            className="view-container"
+          >
+            <div
+              className="container"
+            >
+              <div
+                className="row"
+              >
+                <div
+                  className="col-md-9"
+                />
+                <div
+                  className="col-md-3"
+                />
+              </div>
+            </div>
+          </div>
+        </Phone>
+      </Connect(Phone)>
+    </Router>
+  </BrowserRouter>
+</Provider>
+`;
