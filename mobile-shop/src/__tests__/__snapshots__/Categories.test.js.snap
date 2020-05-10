@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing BasketCart component 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <BrowserRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <withRouter(Connect(Categories))>
+        <Connect(Categories)
+          history={
+            Object {
+              "action": "POP",
+              "block": [Function],
+              "createHref": [Function],
+              "go": [Function],
+              "goBack": [Function],
+              "goForward": [Function],
+              "length": 1,
+              "listen": [Function],
+              "location": Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              },
+              "push": [Function],
+              "replace": [Function],
+            }
+          }
+          location={
+            Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            }
+          }
+          match={
+            Object {
+              "isExact": true,
+              "params": Object {},
+              "path": "/",
+              "url": "/",
+            }
+          }
+        >
+          <Categories
+            categories={
+              Array [
+                Object {
+                  "id": "1",
+                  "name": "Apple",
+                },
+              ]
+            }
+            dispatch={[Function]}
+            history={
+              Object {
+                "action": "POP",
+                "block": [Function],
+                "createHref": [Function],
+                "go": [Function],
+                "goBack": [Function],
+                "goForward": [Function],
+                "length": 1,
+                "listen": [Function],
+                "location": Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                },
+                "push": [Function],
+                "replace": [Function],
+              }
+            }
+            location={
+              Object {
+                "hash": "",
+                "pathname": "/",
+                "search": "",
+                "state": undefined,
+              }
+            }
+            match={
+              Object {
+                "isExact": true,
+                "params": Object {},
+                "path": "/",
+                "url": "/",
+              }
+            }
+          >
+            <div
+              className="well"
+            >
+              <h4>
+                Brand
+              </h4>
+              <div
+                className="list-group"
+              >
+                <Link
+                  className="list-group-item active"
+                  to="/"
+                >
+                  <LinkAnchor
+                    className="list-group-item active"
+                    href="/"
+                    navigate={[Function]}
+                  >
+                    <a
+                      className="list-group-item active"
+                      href="/"
+                      onClick={[Function]}
+                    >
+                      All
+                    </a>
+                  </LinkAnchor>
+                </Link>
+                <Link
+                  className="list-group-item"
+                  key="1"
+                  to="/categories/1"
+                >
+                  <LinkAnchor
+                    className="list-group-item"
+                    href="/categories/1"
+                    navigate={[Function]}
+                  >
+                    <a
+                      className="list-group-item"
+                      href="/categories/1"
+                      onClick={[Function]}
+                    >
+                      Apple
+                    </a>
+                  </LinkAnchor>
+                </Link>
+              </div>
+            </div>
+          </Categories>
+        </Connect(Categories)>
+      </withRouter(Connect(Categories))>
+    </Router>
+  </BrowserRouter>
+</Provider>
+`;

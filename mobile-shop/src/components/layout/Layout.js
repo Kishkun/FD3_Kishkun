@@ -7,6 +7,9 @@ const Layout = (props) => {
         <div className="view-container">
             <div className="container">
                 <div className="row">
+                    <div className="header"><h1>Mobile Store</h1></div>
+                </div>
+                <div className="row">
                     <div className="col-md-5 col-lg-3">
                         <Sidebar />
                     </div>

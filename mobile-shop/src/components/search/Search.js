@@ -26,9 +26,10 @@ class Search extends React.Component {
             <div className="well blosd">
                 <h3 className="lead">Quick shop</h3>
                 <div className="input-group">
-                    <form onSubmit={this.handleSubmit}>
+                    <form id="search-form" onSubmit={this.handleSubmit}>
                         <input
                             onChange={this.handleChange}
+                            id="search"
                             type="text"
                             className="form-control"
                             defaultValue={this.state.value}

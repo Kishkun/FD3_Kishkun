@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing search component 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(Search)>
+    <Search
+      searchPhone={[Function]}
+    >
+      <div
+        className="well blosd"
+      >
+        <h3
+          className="lead"
+        >
+          Quick shop
+        </h3>
+        <div
+          className="input-group"
+        >
+          <form
+            id="search-form"
+            onSubmit={[Function]}
+          >
+            <input
+              className="form-control"
+              defaultValue=""
+              id="search"
+              onChange={[Function]}
+              placeholder="Search..."
+              type="text"
+            />
+          </form>
+          <span
+            className="input-group-btn"
+          >
+            <button
+              className="btn btn-default"
+            >
+              <i
+                className="fa fa-search"
+              />
+            </button>
+          </span>
+        </div>
+      </div>
+    </Search>
+  </Connect(Search)>
+</Provider>
+`;

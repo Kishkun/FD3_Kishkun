@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar test component 1`] = `
+<div>
+  <Connect(BasketCart) />
+  <Connect(Search) />
+  <withRouter(Connect(Categories)) />
+</div>
+`;
