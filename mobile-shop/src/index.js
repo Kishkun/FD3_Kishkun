@@ -6,6 +6,8 @@ import thunk from "redux-thunk";
 import {routerMiddleware, ConnectedRouter} from "connected-react-router";
 import {composeWithDevTools} from "redux-devtools-extension";
 import {Provider} from "react-redux";
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
 
 import "./main.css";
 
