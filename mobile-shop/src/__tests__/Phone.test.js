@@ -6,7 +6,7 @@ import configureMockStore from "redux-mock-store";
 import {BrowserRouter as Router} from "react-router-dom";
 import thunk from "redux-thunk"
 
-test("testing BasketCart component", () => {
+test("testing Phone component", () => {
 
     let phones = {
         1: {
@@ -34,8 +34,11 @@ test("testing BasketCart component", () => {
     };
 
     const initialState = {
-        id: [phones[1].id],
-        phonePage: phones[1].id
+        basket: [phones[1].id],
+        phones: phones,
+        phonePage: {
+            id: phones[1].id
+        }
     };
 
     const middlewares = [thunk];

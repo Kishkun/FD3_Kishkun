@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`testing BasketCart component 1`] = `
+exports[`testing Phone component 1`] = `
 <Provider
   store={
     Object {
@@ -55,6 +55,23 @@ exports[`testing BasketCart component 1`] = `
               },
             }
           }
+          phone={
+            Object {
+              "battery": "Non-removable Li-Ion 2942 mAh battery (11.16 Wh)",
+              "camera": "12MP Wide camera",
+              "categoryId": "1",
+              "cpu": "A12 Bionic chip",
+              "description": "The Apple iPhone XR is a smartphone that was tested with the iOS 12.0. 1 operating system. This model weighs 6.9 ounces, has a 6.1 inch touch screen display, 12-megapixel main camera, and 7-megapixel selfie camera. It comes with 3GB of RAM.",
+              "display": "6.1-inch",
+              "id": "1",
+              "image": "/store/uploads/apple-iphone-xr-new.jpg",
+              "memory": "64GB, 128GB and RAM 4 GB",
+              "name": "Apple XR",
+              "price": 823,
+              "size": "150.9 x 75.7 x 8.3 mm (5.94 x 2.98 x 0.33 in)",
+              "weight": "194 g (6.84 oz)",
+            }
+          }
         >
           <div
             className="view-container"
@@ -67,10 +84,249 @@ exports[`testing BasketCart component 1`] = `
               >
                 <div
                   className="col-md-9"
-                />
+                >
+                  <div
+                    className="thumbnail"
+                  >
+                    <div
+                      className="row"
+                    >
+                      <div
+                        className="col-md-6"
+                      >
+                        <img
+                          alt="Apple XR"
+                          className="img-thumbnail castom-img"
+                          src="/store/uploads/apple-iphone-xr-new.jpg"
+                        />
+                      </div>
+                      <div
+                        className="col-md-6"
+                      >
+                        <div
+                          className="column"
+                          key="cpu"
+                        >
+                          <div
+                            className="ab-details-title"
+                          >
+                            cpu
+                          </div>
+                          <div
+                            className="ab-details-info"
+                          >
+                            A12 Bionic chip
+                          </div>
+                        </div>
+                        <div
+                          className="column"
+                          key="camera"
+                        >
+                          <div
+                            className="ab-details-title"
+                          >
+                            camera
+                          </div>
+                          <div
+                            className="ab-details-info"
+                          >
+                            12MP Wide camera
+                          </div>
+                        </div>
+                        <div
+                          className="column"
+                          key="size"
+                        >
+                          <div
+                            className="ab-details-title"
+                          >
+                            size
+                          </div>
+                          <div
+                            className="ab-details-info"
+                          >
+                            150.9 x 75.7 x 8.3 mm (5.94 x 2.98 x 0.33 in)
+                          </div>
+                        </div>
+                        <div
+                          className="column"
+                          key="weight"
+                        >
+                          <div
+                            className="ab-details-title"
+                          >
+                            weight
+                          </div>
+                          <div
+                            className="ab-details-info"
+                          >
+                            194 g (6.84 oz)
+                          </div>
+                        </div>
+                        <div
+                          className="column"
+                          key="display"
+                        >
+                          <div
+                            className="ab-details-title"
+                          >
+                            display
+                          </div>
+                          <div
+                            className="ab-details-info"
+                          >
+                            6.1-inch
+                          </div>
+                        </div>
+                        <div
+                          className="column"
+                          key="battery"
+                        >
+                          <div
+                            className="ab-details-title"
+                          >
+                            battery
+                          </div>
+                          <div
+                            className="ab-details-info"
+                          >
+                            Non-removable Li-Ion 2942 mAh battery (11.16 Wh)
+                          </div>
+                        </div>
+                        <div
+                          className="column"
+                          key="memory"
+                        >
+                          <div
+                            className="ab-details-title"
+                          >
+                            memory
+                          </div>
+                          <div
+                            className="ab-details-info"
+                          >
+                            64GB, 128GB and RAM 4 GB
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className="caption-full"
+                    >
+                      <h4
+                        className="float-right"
+                      >
+                        $
+                        823
+                      </h4>
+                      <h4>
+                        Apple XR
+                      </h4>
+                      <p>
+                        The Apple iPhone XR is a smartphone that was tested with the iOS 12.0. 1 operating system. This model weighs 6.9 ounces, has a 6.1 inch touch screen display, 12-megapixel main camera, and 7-megapixel selfie camera. It comes with 3GB of RAM.
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 <div
                   className="col-md-3"
-                />
+                >
+                  <div
+                    className="phone-sidebar"
+                  >
+                    <p
+                      className="lead"
+                    >
+                      Quick shop
+                    </p>
+                    <Connect(BasketCart)>
+                      <BasketCart
+                        dispatch={[Function]}
+                        totalBasketCount={1}
+                        totalPrice={823}
+                      >
+                        <div
+                          className="cart"
+                        >
+                          <div
+                            className="dropdown"
+                          >
+                            <Link
+                              className="btn btn-inverse btn-block btn-lg"
+                              id="dLabel"
+                              to="/basket"
+                            >
+                              <LinkAnchor
+                                className="btn btn-inverse btn-block btn-lg"
+                                href="/basket"
+                                id="dLabel"
+                                navigate={[Function]}
+                              >
+                                <a
+                                  className="btn btn-inverse btn-block btn-lg"
+                                  href="/basket"
+                                  id="dLabel"
+                                  onClick={[Function]}
+                                >
+                                  <span
+                                    className="icon anime"
+                                  >
+                                    <i
+                                      className="fa fa-shopping-cart"
+                                    />
+                                  </span>
+                                  <span
+                                    className="price-info"
+                                  >
+                                    1
+                                     item(s) - $
+                                    823
+                                  </span>
+                                </a>
+                              </LinkAnchor>
+                            </Link>
+                          </div>
+                        </div>
+                      </BasketCart>
+                    </Connect(BasketCart)>
+                    <div
+                      className="form-group"
+                    >
+                      <h2>
+                        Apple XR
+                      </h2>
+                      <h2>
+                        $
+                        823
+                      </h2>
+                      <Link
+                        className="btn btn-info btn-block"
+                        to="/"
+                      >
+                        <LinkAnchor
+                          className="btn btn-info btn-block"
+                          href="/"
+                          navigate={[Function]}
+                        >
+                          <a
+                            className="btn btn-info btn-block"
+                            href="/"
+                            onClick={[Function]}
+                          >
+                            Back to store
+                          </a>
+                        </LinkAnchor>
+                      </Link>
+                      <button
+                        className="btn btn-success btn-block"
+                        onClick={[Function]}
+                        type="button"
+                      >
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

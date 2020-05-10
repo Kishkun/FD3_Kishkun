@@ -214,7 +214,7 @@
 .page-enter-active {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 500ms, transform 500ms;
+    transition: opacity 800ms, transform 800ms;
 }
 .page-exit {
     opacity: 1;
@@ -223,7 +223,7 @@
 .page-exit-active {
     opacity: 0;
     transform: translateY(10%);
-    transition: opacity 500ms, transform 500ms;
+    transition: opacity 800ms, transform 800ms;
 }
 @media only screen and (max-width: 1200px) {
 }

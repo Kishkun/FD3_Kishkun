@@ -13,7 +13,7 @@ const Routes = withRouter (({location}) => (
     <TransitionGroup>
         <CSSTransition
             key={location.key}
-            timeout={{enter: 500, exit: 0}}
+            timeout={{enter: 800, exit: 0}}
             classNames="page"
             unmountOnExit
         >
